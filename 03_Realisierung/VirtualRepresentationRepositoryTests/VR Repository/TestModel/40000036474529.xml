@@ -1,0 +1,23 @@
+<IDevice>
+  <PhysicalDescription>
+    <Accuracy>
+      <StandardAccuracy>
+        <Value>0.15</Value>
+        <Unit>mm</Unit>
+      </StandardAccuracy>
+      <RepetionAccuracy>
+        <Value>0.12</Value>
+        <Unit>mm</Unit>
+      </RepetionAccuracy>
+    </Accuracy>
+    <Workspace>
+      <BasicGeometricVolume>
+        <Value>r: 30; h: 50</Value>
+        <Unit>mm</Unit>
+        <Type>Cuboid</Type>
+      </BasicGeometricVolume>
+    </Workspace>
+    <Stress></Stress>
+    <CartesianCoSy></CartesianCoSy>
+  </PhysicalDescription>
+</IDevice>

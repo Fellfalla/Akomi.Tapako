@@ -1,0 +1,6 @@
+﻿<!--'M2Z2'-->
+<IDevice>
+  <Identification>
+    <BrowseName>Roboter Greifer</BrowseName>
+  </Identification>
+</IDevice>

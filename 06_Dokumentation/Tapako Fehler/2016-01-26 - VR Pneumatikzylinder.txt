@@ -1,0 +1,5 @@
+26.01.2016 12:42:42:
+In Assembly 3842522400, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null the file Resources\Declaration.txt was not found   bei ExtensionMethodsCollection.AssemblyExtensions.GetResourceStream(Assembly assembly, String resourcePath) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Sonstiges\03_Realisierung\ExtensionMethodsCollection\ExtensionMethodsCollection\AssemblyExtensions.cs:Zeile 79.
+   bei ExtensionMethodsCollection.AssemblyExtensions.ReadEmbeddedString(Assembly assembly, String resourcePath) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Sonstiges\03_Realisierung\ExtensionMethodsCollection\ExtensionMethodsCollection\AssemblyExtensions.cs:Zeile 11.
+   bei _3842522400._3842522400..ctor()
+

@@ -1,0 +1,45 @@
+09.01.2016 23:38:57:
+System.AggregateException: Mindestens ein Fehler ist aufgetreten. ---> System.InvalidOperationException: Der aufrufende Thread kann nicht auf dieses Objekt zugreifen, da sich das Objekt im Besitz eines anderen Threads befindet.
+   bei System.Windows.Threading.Dispatcher.VerifyAccess()
+   bei System.Windows.ContextLayoutManager.UpdateLayout()
+   bei System.Windows.UIElement.UpdateLayout()
+   bei Tapako.View.AnalysisView.<.ctor>b__2_0(Object sender, PropertyChangedEventArgs args) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoView\AnalysisView.xaml.cs:Zeile 32.
+   bei System.ComponentModel.PropertyChangedEventHandler.Invoke(Object sender, PropertyChangedEventArgs e)
+   bei Prism.Mvvm.BindableBase.OnPropertyChanged(String propertyName)
+   bei Tapako.ViewModel.TapakoViewModel.RaiseBusyStateChanged(Object sender, EventArgs args) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoViewModel\TapakoViewModel.cs:Zeile 233.
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei Prism.Commands.DelegateCommandBase.OnIsActiveChanged()
+   bei Prism.Commands.DelegateCommandBase.set_IsActive(Boolean value)
+   bei Tapako.ViewModel.DeviceViewModel.<AnalyseDevice>b__44_0(Object selectedHostDevice) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoViewModel\DeviceViewModel.cs:Zeile 223.
+   bei System.Threading.Tasks.Task.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()
+   --- Ende der internen Ausnahmestapelüberwachung ---
+---> (Interne Ausnahme #0) System.InvalidOperationException: Der aufrufende Thread kann nicht auf dieses Objekt zugreifen, da sich das Objekt im Besitz eines anderen Threads befindet.
+   bei System.Windows.Threading.Dispatcher.VerifyAccess()
+   bei System.Windows.ContextLayoutManager.UpdateLayout()
+   bei System.Windows.UIElement.UpdateLayout()
+   bei Tapako.View.AnalysisView.<.ctor>b__2_0(Object sender, PropertyChangedEventArgs args) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoView\AnalysisView.xaml.cs:Zeile 32.
+   bei System.ComponentModel.PropertyChangedEventHandler.Invoke(Object sender, PropertyChangedEventArgs e)
+   bei Prism.Mvvm.BindableBase.OnPropertyChanged(String propertyName)
+   bei Tapako.ViewModel.TapakoViewModel.RaiseBusyStateChanged(Object sender, EventArgs args) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoViewModel\TapakoViewModel.cs:Zeile 233.
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei Prism.Commands.DelegateCommandBase.OnIsActiveChanged()
+   bei Prism.Commands.DelegateCommandBase.set_IsActive(Boolean value)
+   bei Tapako.ViewModel.DeviceViewModel.<AnalyseDevice>b__44_0(Object selectedHostDevice) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoViewModel\DeviceViewModel.cs:Zeile 223.
+   bei System.Threading.Tasks.Task.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()<---
+
+System.InvalidOperationException: Der aufrufende Thread kann nicht auf dieses Objekt zugreifen, da sich das Objekt im Besitz eines anderen Threads befindet.
+   bei System.Windows.Threading.Dispatcher.VerifyAccess()
+   bei System.Windows.ContextLayoutManager.UpdateLayout()
+   bei System.Windows.UIElement.UpdateLayout()
+   bei Tapako.View.AnalysisView.<.ctor>b__2_0(Object sender, PropertyChangedEventArgs args) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoView\AnalysisView.xaml.cs:Zeile 32.
+   bei System.ComponentModel.PropertyChangedEventHandler.Invoke(Object sender, PropertyChangedEventArgs e)
+   bei Prism.Mvvm.BindableBase.OnPropertyChanged(String propertyName)
+   bei Tapako.ViewModel.TapakoViewModel.RaiseBusyStateChanged(Object sender, EventArgs args) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoViewModel\TapakoViewModel.cs:Zeile 233.
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei Prism.Commands.DelegateCommandBase.OnIsActiveChanged()
+   bei Prism.Commands.DelegateCommandBase.set_IsActive(Boolean value)
+   bei Tapako.ViewModel.DeviceViewModel.<AnalyseDevice>b__44_0(Object selectedHostDevice) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\TapakoViewModel\DeviceViewModel.cs:Zeile 223.
+   bei System.Threading.Tasks.Task.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="a95bf79b-7ece-4a45-8760-e5f86723c6ae" name="Architektur" linkedPackageId="92f1dd59-a69d-4b68-a7e2-b3c38f095397" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d5636409-4ed4-4b15-9f87-1dc9575c7806">
+      <elementDefinition Id="829becfd-646d-43a2-9790-a2926ffb56f8" />
+      <body>Greift auf das Repostory zu</body>
+      <annotatedElements>
+        <classMoniker Id="8552686f-7d19-4ebc-bd92-590b7704d8b6" LastKnownName="Database Module1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="e6e02759-d9f4-4e6b-ac8a-584983c765ab" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="d94f840e-fe4e-4191-8c43-563c6a58fccc" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="083065c4-1c46-429a-8251-583d346836cf">
+          <propertyInstance Id="e0b6a4df-c1f4-4bf6-82e7-85b164c1bb6c" name="BaseName">
+            <elementDefinition Id="ccc818ae-9888-4e7f-9c51-b0407767b32d" />
+          </propertyInstance>
+          <elementDefinition Id="86ff0b0b-8991-41ca-abaf-3456d67d2034" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fedc3ea6-9185-4890-bfbd-2cd6e8edfdc4">
+          <propertyInstance Id="404e3f9d-a19b-4914-8f63-dc96caa38407" name="ClrAttributes">
+            <elementDefinition Id="d0e8bb9a-907d-4d32-b934-1e94c51d5302" />
+          </propertyInstance>
+          <elementDefinition Id="11eef9f2-8cb5-4fb1-b3a0-8f2579fe9351" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="75cbceb2-2eab-4136-bc2d-111c2d77c845">
+          <propertyInstance Id="8844dd42-96a5-4ef9-8dcc-eaa822d9cf43" name="Usings">
+            <elementDefinition Id="038ec06f-3d3c-4ed3-990e-5479bf9c0207" />
+          </propertyInstance>
+          <elementDefinition Id="deada43a-4181-4323-87b6-0955609d3e41" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="367251e1-a82a-4476-a726-b03c3675bf15" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="43d03694-67c9-425f-a3a6-ec5cd307260c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5d5befa6-7a54-4f37-935d-2f8ae1962dde">
+          <propertyInstance Id="3b015ab1-a04e-4c40-9b65-51f9e704f68d" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="8d04f0ee-1168-4ae1-9c72-19b7529d81b9" />
+          </propertyInstance>
+          <elementDefinition Id="3e8c14ec-f936-4cde-8ba6-895ca44ebcc2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b0942551-6946-4f96-9226-fb7f44537c9e">
+          <propertyInstance Id="42835649-7676-4457-bbe1-a7678fa571a0" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="e09885a7-ac6b-4c56-92ca-eeb0b8986bcb" />
+          </propertyInstance>
+          <elementDefinition Id="6d53f4ea-56f9-4cfb-8b22-2accb615e0f7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="57b050e1-26bb-4264-8e0e-f5220f8a2bcf">
+          <propertyInstance Id="b7ff097b-4532-4555-9dcf-3006527d90f4" name="ProjectPath" value="ClassTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|EnumTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|InterfaceTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|StructTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj">
+            <elementDefinition Id="562a7da9-fa5a-48ab-acf7-572b7a87fae6" />
+          </propertyInstance>
+          <elementDefinition Id="55b0fd3c-55bc-442f-bab3-8b9c8aa3b8ea" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="cd71959f-3aa7-4401-9835-8c1dbb77d190">
+          <propertyInstance Id="02c85cdd-3c1e-4347-bd66-e2e61eb7405f" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="51a6194a-adf4-470a-8f10-c19a5f862306" />
+          </propertyInstance>
+          <elementDefinition Id="785eefa9-d4ca-4516-8eea-07ab25f0da83" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="12984795-0e2a-420b-bfe7-9c6e3fb76273">
+          <propertyInstance Id="579a2c26-5677-4e5a-98f6-ee19ab201908" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="0fe6bf74-4129-47e9-b455-4ce7a2793e2a" />
+          </propertyInstance>
+          <elementDefinition Id="23955442-6a20-45ec-ba84-9c03fe757a39" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b5f1bb25-02e0-4d81-9b0f-6de41c029310">
+          <propertyInstance Id="1cdb6441-095a-4e03-8a70-b4b8fa288eb8" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="86dba248-e06b-4f86-9183-c2bd78959c0c" />
+          </propertyInstance>
+          <elementDefinition Id="fb987ac0-66da-43d9-a84f-ca8bb797ca4a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="42042de0-2fd2-43dd-a99f-d3550730d332">
+          <propertyInstance Id="a883692e-399f-4deb-81fd-7b55a7e21055" name="Parameters">
+            <elementDefinition Id="e0baa9b5-f383-4cdd-9bd0-d0ced31292d8" />
+          </propertyInstance>
+          <elementDefinition Id="5b052dc6-5449-43db-bbd4-8e22b77f47d7" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6c8fe839-777a-4896-b35a-dfb4c054f0be" name="Informationsmodell1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d172ba2e-4172-42c9-a9fa-16b710a09cd2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="30412139-1663-4436-aff7-aa8b5178f283" name="OPCUA Client1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8b9addca-4b07-4cf8-98f7-ca7cd13e5283" />
+        <targetEnds>
+          <association Id="05726d4d-0f9a-4e97-ba05-faa114332bea" isDerived="false" sourceEndRoleName="OPCUA Client" targetEndRoleName="Tapako" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0a8f504d-0fc6-4d82-92ce-fd05410e4a80" LastKnownName="Tapako1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="afe9dcfd-b951-42b7-9252-4572017b2852" name="OPCUA Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="38e8909a-b018-433a-a2db-458646e993ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e2c811bb-2b38-4920-ad55-618fc8b6332e" name="Tapako" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="ace6f472-b3bd-4d0f-9caa-f6b93c7a4da6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="73b14627-dc6c-46d7-ad9d-bda440f6331f" />
+          </association>
+          <association Id="3e2e87af-747c-4bad-a03e-989c3169df29" isDerived="false" sourceEndRoleName="OPCUA Client" targetEndRoleName="Informationsmodell" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6c8fe839-777a-4896-b35a-dfb4c054f0be" LastKnownName="Informationsmodell1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f41ed90-fee0-4616-b89c-3d0a3387a78a" name="OPCUA Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b07c0a1e-8be3-4c4f-8500-9ff525247264" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b466fe3-09ab-4a30-8255-a554b8499471" name="Informationsmodell" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2bfda5eb-d714-48b7-903f-84587767b704" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc07afb2-0beb-4381-bb73-58ab1d7dfe8e" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0a8f504d-0fc6-4d82-92ce-fd05410e4a80" name="Tapako1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a1590c3c-9889-4e32-a55b-eda36155cec2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7320aa8a-8541-436c-95fa-49f3a8eef728" name="Device Driver Repository" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3fd57e87-3cef-45b5-8ed3-18b52a933a1e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="67624fb7-e4dc-458a-9152-fca2442f4d13" name="Primitive Device3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="05a3f98b-a2b1-40ef-b285-6a57cc1389b6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="567110aa-9efb-4b24-b937-009ff5e8b332" name="Analysator1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1d8262ae-522f-497f-b29e-a97d0567453e" />
+        <targetEnds>
+          <association Id="664a0ce6-a4af-416f-80a5-44241e93b1ab" isDerived="false" sourceEndRoleName="Analysator" targetEndRoleName="Tapako" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0a8f504d-0fc6-4d82-92ce-fd05410e4a80" LastKnownName="Tapako1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d49d731d-4950-425f-8bc3-5ef91fb31d07" name="Analysator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad10f96a-92aa-427c-82cf-6f26a5484eed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab7f4d36-0990-4fd6-9c17-1a7bb581b427" name="Tapako" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="9f945d14-02b9-41f9-89a6-ca4d5cfe2516" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a6d5ec4-7fbb-4392-9fb4-bbf3003594d0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1045715f-bf4e-4248-989b-993de5fc5e7a" name="Konifgurator1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="04da684f-ac54-4d69-8394-b0e0da138698" />
+        <targetEnds>
+          <association Id="cc6af146-bb3c-4f4f-836a-2e43b02ddcaa" isDerived="false" sourceEndRoleName="Konifgurator" targetEndRoleName="Tapako" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0a8f504d-0fc6-4d82-92ce-fd05410e4a80" LastKnownName="Tapako1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9766066b-a891-4536-8e93-63540bc5f09e" name="Konifgurator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1f432ae6-6fb2-49f3-bfa2-b2c183564ac8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7a063c7-6d34-4196-946c-62fbb9d3ebcb" name="Tapako" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="93f2146f-26ca-406c-be80-64a0a2b936e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="308e80b1-a7de-455f-a416-ab53ac196052" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8552686f-7d19-4ebc-bd92-590b7704d8b6" name="Database Module1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eb499ad4-bc3f-46ff-b0eb-79da24600809" />
+        <targetEnds>
+          <association Id="26693db0-ccc5-489a-b6b5-2c189d27098c" isDerived="false" sourceEndRoleName="Database Module" targetEndRoleName="Tapako" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0a8f504d-0fc6-4d82-92ce-fd05410e4a80" LastKnownName="Tapako1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d5dda92-1556-4d39-9152-a9e921d3310e" name="Database Module" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2937e753-14db-4ba9-926f-57d5480618d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6802f346-6d52-4e7f-86df-3d0e4f92c9e9" name="Tapako" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="ea9bbd55-449d-40c6-903e-07410f052d2b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="644681a8-3c45-4bdc-9b6c-07e21a466c04" />
+          </association>
+          <association Id="cc116421-fbe3-4420-9243-85f2fd7eb0ab" isDerived="false" sourceEndRoleName="Database Module" targetEndRoleName="Treiber Datenbank" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7320aa8a-8541-436c-95fa-49f3a8eef728" LastKnownName="Device Driver Repository" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61c30670-4ff4-4ca0-906a-8d0fc7128e5c" name="Database Module" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69fd7d7a-459d-4bca-bc5b-0b5a147b9bd9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7adc450c-32a1-4de1-b96d-6746267ff84c" name="Treiber Datenbank" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13b1040e-e11a-4896-aafe-545b708b6144" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee619312-716a-4c49-91bb-250f60c9f005" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="cd2baf48-5319-462f-9f12-7e937c639b02" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e7e10e7-0d80-48e4-a5d8-a205009bf885" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b5a0b0e5-952c-416f-88e3-3f102d1b5b09" name="Field-Bus Device1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1171cba7-dc08-4152-9961-0665f131215e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4fb9250f-ab90-4799-90b7-caf9a0c35e95" name="IO-Link Device1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="551b65d7-5b20-4127-9003-8eb135738007" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="34dad053-d303-47be-aaff-a9ec5b4bbd6b" name="UniversalHostSearcher" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="49cb7a6a-44df-4ab9-8dab-c626249e430f" />
+        <targetEnds>
+          <association Id="09adf2b6-d71a-480e-a8d9-8f22ba80d9db" isDerived="false" sourceEndRoleName="UniversalHostSearcher" targetEndRoleName="Analysator1" isLeaf="false" isAbstract="false">
+            <classMoniker Id="567110aa-9efb-4b24-b937-009ff5e8b332" LastKnownName="Analysator1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a45c79f-c724-413c-b992-932ff2fd49e2" name="UniversalHostSearcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2824afea-a71d-4ed6-a374-325296aaa253" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1bfcb581-82cd-4e5f-b033-0439726953c3" name="Analysator1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="045be530-fcd7-49e3-8e12-aea85c44d3ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea5c9709-6911-498b-8e77-ad2857ed085f" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39c813ad-3c00-463b-b6c3-c55b8403edd4" name="HostSearchDriver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="10000497-ed7b-4c17-b384-1425b5d36715" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="2a6ee4a7-6504-4c96-8405-fcfe57e5bac3" name="IHostSearchDriver" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fe1b39e-bac7-4a04-9d6e-e0d376081d61" />
+        <ownedOperations>
+          <operation Id="85de617f-ab70-4571-90e2-1d1afddb1abb" name="List&lt;XElement&gt; SearchHostDevices" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c7dc9e2f-2dcd-4994-a904-7600d700b434" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="92f1dd59-a69d-4b68-a7e2-b3c38f095397" name="ModelingProject1">
+    <elementDefinition Id="4773ae1f-db40-439e-9d1c-92901b9b3cc1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fb409ef1-dca5-4cc2-b8a6-372d8c01c4ea">
+        <profileInstance Id="1157b85b-beb6-4c7e-b1d2-e43584695e8f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3f51d0e9-3e4e-4be6-8afc-c6beb4eecab5">
+        <profileInstance Id="c4290846-924c-4057-970d-635c490ee7b1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="aa0523b3-18ef-4016-9448-290694d0b7f3">
+        <profileInstance Id="79c9cc63-f4cc-48ba-815d-46080f5726fa" name="CSharpProfile">
+          <elementDefinition Id="4ba353d6-98c5-4506-808b-265e05f4c756" />
+        </profileInstance>
+        <elementDefinition Id="e74658fe-db86-4db1-a9a1-7013316ec760" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cba7a61b-8365-42b4-a9c1-a521c1fb7ae1">
+        <profileInstance Id="8ce52bde-b8f6-4b41-bcc0-9307dc77ce4a" name="TextTemplateBindings">
+          <elementDefinition Id="d0d95a4d-88a4-493a-8eea-c7ad98523caa" />
+        </profileInstance>
+        <elementDefinition Id="736a83ae-713f-4ab6-9c38-33f13d99e10e" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

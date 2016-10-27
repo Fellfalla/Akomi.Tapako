@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="c6ed343b-2250-4149-a156-9a1a23546388" name="Strukturdiagramm" linkedPackageId="0f566077-3b99-4134-9931-7fc96cb9c5c1" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="af3c52ca-2b5b-4872-9180-9b35bbf102e7" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="d94f840e-fe4e-4191-8c43-563c6a58fccc" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="09916af7-f1c2-4986-ba3f-d538148264b5">
+          <propertyInstance Id="133e9b91-9a65-40da-9f32-5b055d173873" name="BaseName">
+            <elementDefinition Id="ccc818ae-9888-4e7f-9c51-b0407767b32d" />
+          </propertyInstance>
+          <elementDefinition Id="86ff0b0b-8991-41ca-abaf-3456d67d2034" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4e4a586c-d963-45cc-95db-f09b7622a128">
+          <propertyInstance Id="2d0eaed0-cca1-411a-8811-af2ec2846628" name="ClrAttributes">
+            <elementDefinition Id="d0e8bb9a-907d-4d32-b934-1e94c51d5302" />
+          </propertyInstance>
+          <elementDefinition Id="11eef9f2-8cb5-4fb1-b3a0-8f2579fe9351" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f2e5a44b-aff2-49b0-8af6-a942eb624aaa">
+          <propertyInstance Id="c7f1e161-c618-419f-9d54-25755191681a" name="Usings">
+            <elementDefinition Id="038ec06f-3d3c-4ed3-990e-5479bf9c0207" />
+          </propertyInstance>
+          <elementDefinition Id="deada43a-4181-4323-87b6-0955609d3e41" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="3142c11c-0ebb-414a-8529-2e54b3c4f9ce" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="43d03694-67c9-425f-a3a6-ec5cd307260c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ac757548-4092-4a0c-ab04-d7cd705f3d74">
+          <propertyInstance Id="0a5bec2d-e51b-4596-ae51-63ec9470ff7f" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="8d04f0ee-1168-4ae1-9c72-19b7529d81b9" />
+          </propertyInstance>
+          <elementDefinition Id="3e8c14ec-f936-4cde-8ba6-895ca44ebcc2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c12ec3a9-1693-4ec4-8c01-636e3852b94e">
+          <propertyInstance Id="8cdf54b2-0c1d-4b7e-8e2a-b4f47ec85b17" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="e09885a7-ac6b-4c56-92ca-eeb0b8986bcb" />
+          </propertyInstance>
+          <elementDefinition Id="6d53f4ea-56f9-4cfb-8b22-2accb615e0f7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ac6fdd27-a29d-4074-a864-68ad31a28a54">
+          <propertyInstance Id="6bb91ab8-3f43-4f49-8d32-561a71205b7a" name="ProjectPath" value="ClassTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|EnumTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|InterfaceTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|StructTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj">
+            <elementDefinition Id="562a7da9-fa5a-48ab-acf7-572b7a87fae6" />
+          </propertyInstance>
+          <elementDefinition Id="55b0fd3c-55bc-442f-bab3-8b9c8aa3b8ea" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e00fcc8f-243e-486e-8811-648ce107a645">
+          <propertyInstance Id="69f565ce-1e4d-4019-920b-e7a9da116192" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="51a6194a-adf4-470a-8f10-c19a5f862306" />
+          </propertyInstance>
+          <elementDefinition Id="785eefa9-d4ca-4516-8eea-07ab25f0da83" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ee82d5c7-7fed-4273-8ef3-e812b7c090f3">
+          <propertyInstance Id="c0b9ebca-300d-4231-9a77-ae2e064201b0" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="0fe6bf74-4129-47e9-b455-4ce7a2793e2a" />
+          </propertyInstance>
+          <elementDefinition Id="23955442-6a20-45ec-ba84-9c03fe757a39" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="acef89de-fe2f-466a-996a-743edbb9c107">
+          <propertyInstance Id="21f15401-b79a-4990-9624-a252cc13f21d" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="86dba248-e06b-4f86-9183-c2bd78959c0c" />
+          </propertyInstance>
+          <elementDefinition Id="fb987ac0-66da-43d9-a84f-ca8bb797ca4a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="964c7fdc-4652-425a-b4b7-ba345b32bdff">
+          <propertyInstance Id="3d4af229-07ab-408f-9d9c-1ce0b6b60fd4" name="Parameters">
+            <elementDefinition Id="e0baa9b5-f383-4cdd-9bd0-d0ced31292d8" />
+          </propertyInstance>
+          <elementDefinition Id="5b052dc6-5449-43db-bbd4-8e22b77f47d7" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3df116c5-90e1-49a7-a65a-e2cf3271cb82" name="Tapako" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dd319554-8dbb-4ce3-9417-4ae04e1e19c2" />
+        <targetEnds>
+          <association Id="a62b81b5-ffcb-404f-8fdd-e4bc9307148d" isDerived="false" sourceEndRoleName="Tapako" targetEndRoleName="Device Information Manager" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f3dd1099-0d34-449e-ba44-60b1a4a81664" LastKnownName="Device Information Manager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd2e63e0-98b8-4cee-8b25-be202f1c102c" name="Tapako" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="34576d72-d524-428b-ba70-a10f7bc6740e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac4ef785-e273-4c64-9a92-f94492b37348" name="Device Information Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a2e8c62f-dfc8-4d9b-8caa-a041452ebe91" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="50be8394-ab8c-48b2-8946-4e5cc980d1f1" />
+          </association>
+          <association Id="dc474e8f-03bf-41fb-80e9-f046edaa65d1" isDerived="false" sourceEndRoleName="Tapako" targetEndRoleName="Universal Host Searcher" isLeaf="false" isAbstract="false">
+            <classMoniker Id="80ff41a1-b972-48d5-b76f-4b40fc7a0951" LastKnownName="Universal Host Searcher" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90ea9c0c-2b10-4cdf-a0fd-a3c14a643e3b" name="Tapako" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd6b18c5-08a4-4ef8-8d19-db4216c3b111" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88a585e9-5ffe-4863-ab70-ea23482d526d" name="Universal Host Searcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="002c8f0a-8d5a-4624-9111-8193c2f036ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c1125ad7-a07c-4c72-b51e-b7cd764f7960" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="87376ccf-b813-44a9-8be8-cfac58dc0086" name="Device Driver Repository" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3fd57e87-3cef-45b5-8ed3-18b52a933a1e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c17219c8-1271-46ac-bd3f-bd22a873bc97" name="Device MAC Repository" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="88ea53fe-df7f-4629-9067-cd84091d332d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ce350f76-a75f-44c6-a862-e00cf47fa2a5" name="Information Modell" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4a6223f-7923-4d9e-990a-db3f33fcef64" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68194148-2fea-468f-90f5-77f986c46c7f" name="Peripherie" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7411c98a-09d5-4900-b634-323088774f16" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="80ff41a1-b972-48d5-b76f-4b40fc7a0951" name="Universal Host Searcher" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1363fafe-5e21-4096-a9b7-75ef17f4ba99" />
+        <ownedOperationsInternal>
+          <operation Id="bf881633-572c-4910-a4ea-2639130e4e86" name="SearchForSubSystems" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4a27f749-3ed3-4410-a786-4b4b29982ab2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a855ece8-e023-4870-bce5-ea9d3971b830" direction="Return">
+                  <elementDefinition Id="78ab2352-aaa6-469b-bf87-718c88af351a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5181a3e2-9548-4db3-90f0-1fc9979cf24e" LastKnownName="ITapakoDevice" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e06ba895-75cb-4cac-bb4e-efaf5f9939ae" name="Graphical User Interface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f41a8d5f-5ae3-4c77-a3f6-d8318f92b7b8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f3dd1099-0d34-449e-ba44-60b1a4a81664" name="Device Information Manager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="07508802-8253-49fd-922d-651450d5391f" />
+        <ownedOperationsInternal>
+          <operation Id="97044353-6cba-4f0f-85ad-39949fb50490" name="GetDeviceInformation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b22f6ecd-e38d-4dd4-b6a9-a31ef1b72dca" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bcbc4ee5-c345-4622-aa9d-2a3568555e50" name="IDevice" direction="In" isUnique="false">
+                  <elementDefinition Id="70f4c56f-21b3-4029-9eef-57001c162aa4" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="23e0860b-c25a-4f82-a715-c496c8ed5e6e" direction="Return">
+                  <elementDefinition Id="e4a7a9d4-7b98-4f99-a04b-764db2fb5e59" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1fc16697-4756-4a9f-b952-c06e7a639b59" LastKnownName="IDevice" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1fc16697-4756-4a9f-b952-c06e7a639b59" name="IDevice" isAbstract="false" isLeaf="false" cachedFullName="IDevice">
+        <elementDefinition Id="6ee35858-7d41-4901-81c9-503ed36d1901" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5181a3e2-9548-4db3-90f0-1fc9979cf24e" name="ITapakoDevice" isAbstract="false" isLeaf="false" cachedFullName="ITapakoDevice">
+        <elementDefinition Id="9a1047e7-7674-4472-bcd3-9c8cfafb4648" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="0f566077-3b99-4134-9931-7fc96cb9c5c1" name="ModelingProject1">
+    <elementDefinition Id="4773ae1f-db40-439e-9d1c-92901b9b3cc1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3ffbda83-0daf-42da-91fd-0c3eaef9d282">
+        <profileInstance Id="db10220c-cafd-4a58-8589-a651085f30ce" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9619ecc5-e599-4ed1-81a5-448c37e1f94a">
+        <profileInstance Id="ab82963c-eecf-42aa-9c8b-8174b99cdd97" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3a772145-03f5-4850-8d10-4df6dde2a8db">
+        <profileInstance Id="eed12e73-92bc-4b28-9727-cd938951bf65" name="CSharpProfile">
+          <elementDefinition Id="4ba353d6-98c5-4506-808b-265e05f4c756" />
+        </profileInstance>
+        <elementDefinition Id="e74658fe-db86-4db1-a9a1-7013316ec760" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d33bf169-ac0e-400f-8726-0e2ef7f345f4">
+        <profileInstance Id="68d39233-c546-48b5-9d3b-e22470fb34eb" name="TextTemplateBindings">
+          <elementDefinition Id="d0d95a4d-88a4-493a-8eea-c7ad98523caa" />
+        </profileInstance>
+        <elementDefinition Id="736a83ae-713f-4ab6-9c38-33f13d99e10e" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

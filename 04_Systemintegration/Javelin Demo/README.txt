@@ -1,0 +1,1 @@
+Falls nichts erkannt wird: TwinCat Lizenz in VS reaktivieren!

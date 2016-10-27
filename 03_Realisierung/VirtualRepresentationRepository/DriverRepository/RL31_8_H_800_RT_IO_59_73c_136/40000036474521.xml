@@ -1,0 +1,17 @@
+<!--'M2LS2'-->
+<IDevice>
+    <Identification>
+    <BrowseName>Lichtschranke 2 Modul 2</BrowseName>
+  </Identification>
+  <PhysicalDescription>
+    <DeviceFrame>
+      <Unit>cm</Unit>
+      <PositionX>-5</PositionX>
+      <PositionY>70.5</PositionY>
+      <PositionZ>10.8</PositionZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <RotationZ>0</RotationZ>
+    </DeviceFrame>
+  </PhysicalDescription>
+</IDevice>

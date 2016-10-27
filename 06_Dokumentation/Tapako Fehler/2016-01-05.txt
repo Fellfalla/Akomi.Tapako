@@ -1,0 +1,27 @@
+Reproduktion: Schnell hintereinander Start und Stop server im ServerControl Fenster klicken
+
+
+05.01.2016 17:55:03:
+System.AggregateException: Mindestens ein Fehler ist aufgetreten. ---> System.NullReferenceException: hv: objectModel is not initialized, try starting the server first.
+   bei AkomiServer.MyServerManager.LinkObjectToModel(Object entity, OpcUaStartupParameters parameters) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\fOpcUaServer\MyServerManager.cs:Zeile 74.
+   bei AkomiServer.OpcUaServer.StartServer(Object classToLinkWithServer) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\OpcUaServer.cs:Zeile 114.
+   bei AkomiServer.OpcUaServer.StartServer(Object classToLinkWithServer, OpcUaStartupParameters parameters) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\OpcUaServer.cs:Zeile 100.
+   bei Tapako.Core.Model.TapakoOpcUaServer.<>c__DisplayClass44_0.<StartOpcUaServer>b__0(Object opcRegistrationObject) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\Tapako.Core.Model\TapakoOpcUaServer.cs:Zeile 150.
+   bei System.Threading.Tasks.Task.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()
+   --- Ende der internen Ausnahmestapelüberwachung ---
+---> (Interne Ausnahme #0) System.NullReferenceException: hv: objectModel is not initialized, try starting the server first.
+   bei AkomiServer.MyServerManager.LinkObjectToModel(Object entity, OpcUaStartupParameters parameters) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\fOpcUaServer\MyServerManager.cs:Zeile 74.
+   bei AkomiServer.OpcUaServer.StartServer(Object classToLinkWithServer) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\OpcUaServer.cs:Zeile 114.
+   bei AkomiServer.OpcUaServer.StartServer(Object classToLinkWithServer, OpcUaStartupParameters parameters) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\OpcUaServer.cs:Zeile 100.
+   bei Tapako.Core.Model.TapakoOpcUaServer.<>c__DisplayClass44_0.<StartOpcUaServer>b__0(Object opcRegistrationObject) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\Tapako.Core.Model\TapakoOpcUaServer.cs:Zeile 150.
+   bei System.Threading.Tasks.Task.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()<---
+
+System.NullReferenceException: hv: objectModel is not initialized, try starting the server first.
+   bei AkomiServer.MyServerManager.LinkObjectToModel(Object entity, OpcUaStartupParameters parameters) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\fOpcUaServer\MyServerManager.cs:Zeile 74.
+   bei AkomiServer.OpcUaServer.StartServer(Object classToLinkWithServer) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\OpcUaServer.cs:Zeile 114.
+   bei AkomiServer.OpcUaServer.StartServer(Object classToLinkWithServer, OpcUaStartupParameters parameters) in C:\Studenten\AKOMI\Arbeitspakete\TP4 - Umsetzung\Dynamischer OPC UA Server\03_Realisierung\AkomiServer - Markus\AkomiServer\OpcUaServer.cs:Zeile 100.
+   bei Tapako.Core.Model.TapakoOpcUaServer.<>c__DisplayClass44_0.<StartOpcUaServer>b__0(Object opcRegistrationObject) in D:\AKOMI\Arbeitspakete\TP4 - Umsetzung\Tapako\03_Realisierung\Tapako\Tapako.Core.Model\TapakoOpcUaServer.cs:Zeile 150.
+   bei System.Threading.Tasks.Task.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()

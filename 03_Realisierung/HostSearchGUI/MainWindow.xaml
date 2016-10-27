@@ -1,0 +1,61 @@
+﻿<Window x:Class="HostSearchGUI.PlcSelectionGui"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:tapakoPublicClasses="clr-namespace:TapakoPublicClasses;assembly=TapakoPublicClasses"
+        Title="PlcSelectionGUI" Height="500" Width="900">
+    <!--<Window.Resources>
+        <Storyboard x:Key="candidateProgressStoryboard" RepeatBehavior="Forever">
+            <DoubleAnimation Storyboard.TargetProperty="(RangeBase.Value)" From="0" To="100" Duration="0:0:20" Storyboard.TargetName="progressBar"/>
+        </Storyboard>
+    </Window.Resources>-->
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="125"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <ListBox x:Name="PlcDevices" Grid.Row="1" Grid.Column="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionMode="Multiple">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type tapakoPublicClasses:HostDevice}">
+                    <StackPanel Orientation="Vertical" Width="100" Margin="5,5,5,5">
+                        <Image Source="/network-2.ico"/>
+                        <TextBlock Text="{Binding Name}"  TextAlignment="Center"/>
+                        <TextBlock Text="{Binding IpAddress}"  TextAlignment="Center"/>
+                        <TextBlock Text="{Binding MacAddress}" TextAlignment="Center" FontSize="10px"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Grid Grid.Column="0" Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="TextBoxSubnet" Text="129.187.158." HorizontalAlignment="Left" Grid.Column="0" Width="132" ></TextBox>
+            <Button Content="Start BroadcastSearch" Grid.Column="1" HorizontalAlignment="Left" Width="132" Click="Button_Click"/>
+            <ProgressBar x:Name="progressBar" Grid.Column="2" IsEnabled="False" Minimum="0" Maximum="100" Value="0"/>
+         </Grid>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom">
+            
+            <Button Content="Button" Click="Button_Click2"/>
+            <CheckBox x:Name="Save_Password" Content="CheckBox" IsEnabled="False"/>
+            <PasswordBox x:Name="Password" IsEnabled="False"/>
+            <TextBox x:Name="Username" TextWrapping="Wrap" Text="Benutzername" Cursor="" IsEnabled="False"/>
+
+        </StackPanel>
+        
+      
+    </Grid>
+</Window>

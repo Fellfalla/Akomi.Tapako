@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="Tapako.View.OpcUaServerControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:Tapako.ViewModel;assembly=Tapako.ViewModel"
+             xmlns:helper="clr-namespace:Tapako.View.Helper"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400"
+             d:DataContext="{d:DesignInstance d:Type=viewModel:OpcUaServerControlViewModel, IsDesignTimeCreatable=True}">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="../Templates/ResourceDictionaryGlobal.xaml"></ResourceDictionary>-->
+                <ResourceDictionary Source="pack://application:,,,/Tapako.Design;component/TapakoDesign.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type Grid}" x:Key="StateGrid">
+                <Style.Setters>
+                    <Setter Property="helper:GridHelpers.ColumnsSharedSizeScope"
+                                Value="0, StateLabels; 1, StateValues"></Setter>
+                    <Setter Property="helper:GridHelpers.ColumnCount" Value="2"></Setter>
+                    <Setter Property="helper:GridHelpers.StarColumns" Value="0,1,2"></Setter>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="{x:Type TextBlock}" x:Key="StateLabel" BasedOn="{StaticResource SmallTextBlock}">
+                <Style.Setters>
+                    <Setter Property="Margin" Value="0,0,10,0"></Setter>
+                </Style.Setters>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid IsSharedSizeScope="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" HorizontalAlignment="Stretch" Style="{StaticResource Heading}">Server Control</Label>
+        <Button Grid.Row="1">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}">
+                    <Setter Property="Content" Value="Server is busy"></Setter>
+                    <Setter Property="IsEnabled" Value="{Binding IsServerReady}"></Setter>
+                    <Style.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsServerStarted}" Value="False"></Condition>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Button.Content" Value="{Binding ObjectToPublish}"/>
+                            <Setter Property="Button.ContentStringFormat" Value="Publish {0} with OPC UA Server"/>
+                            <Setter Property="Button.Command" Value="{Binding StartOpcUaServerCommand}"></Setter>
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsServerStarted}" Value="True"></Condition>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Button.Content" Value="Stop OPC UA Server"></Setter>
+                            <Setter Property="Button.Command" Value="{Binding StopOpcUaServerCommand}"></Setter>
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding ObjectToPublish}" Value="{x:Null}" >
+                            <Setter Property="Button.Content" Value="No object choosen"></Setter>
+                            <Setter Property="Button.IsEnabled" Value="False"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--<Button Grid.Row="1"  Content="Start OPC UA Server" Command="{Binding StartOpcUaServerCommand}" CommandParameter="{Binding ObjectToPublish}"></Button>
+        <Button Grid.Row="2"  Content="Stop OPC UA Server" Command="{Binding StopOpcUaServerCommand}"></Button>-->
+        <StackPanel Margin="5" VerticalAlignment="Bottom" Grid.Row="4">
+            <TextBlock Style="{StaticResource SmallBoldTextBlock}">Configuration:</TextBlock>
+            <Grid IsSharedSizeScope="True" Margin="20,0,0,0" VerticalAlignment="Center" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="Labels" Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource SmallContent}">Name:</Label>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding ApplicationName}"></TextBox>
+                <Label Grid.Row="1" Grid.Column="0" Style="{StaticResource SmallContent}">Port:</Label>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Port}"></TextBox>
+                <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource SmallContent}">Ignore null objects:</Label>
+                <CheckBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding IgnoreNullObjects}" Margin="5"></CheckBox>
+                <Label Grid.Row="3" Grid.Column="0" Style="{StaticResource SmallContent}">Disable Console Output</Label>
+                <CheckBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding SuppressConsoleOutput}" Margin="5"></CheckBox>
+                <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource SmallContent}">Max recursion depth:</Label>
+                <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding MaxRecursionDepth}"></TextBox>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.IsSharedSizeScope="True" Margin="5" VerticalAlignment="Bottom" Grid.Row="5">
+            <TextBlock Style="{StaticResource SmallBoldTextBlock}">States:</TextBlock>
+            <StackPanel Margin="20,0,0,0" Orientation="Vertical" >
+                <Grid Style="{StaticResource StateGrid}">
+                    <TextBlock Grid.Column="0" Style="{StaticResource StateLabel}">Online:</TextBlock>
+                    <TextBlock Grid.Column="1" Style="{StaticResource SmallTextBlock}" Text="{Binding IsServerStarted}"></TextBlock>
+                </Grid>
+                <Grid Style="{StaticResource StateGrid}">
+                    <TextBlock Grid.Column="0" Style="{StaticResource StateLabel}">Registered Nodes:</TextBlock>
+                    <TextBlock Grid.Column="1" Style="{StaticResource SmallTextBlock}" Text="{Binding RegisteredNodeCount}"></TextBlock>
+                </Grid>
+                <Grid Style="{StaticResource StateGrid}">
+                    <TextBlock Grid.Column="0" Style="{StaticResource StateLabel}">Registered Methods:</TextBlock>
+                    <TextBlock Grid.Column="1" Style="{StaticResource SmallTextBlock}" Text="{Binding RegisteredMethodCount}"></TextBlock>
+                </Grid>
+                <Grid Style="{StaticResource StateGrid}">
+                    <TextBlock Grid.Column="0" Style="{StaticResource StateLabel}">Registered Variables:</TextBlock>
+                    <TextBlock Grid.Column="1" Style="{StaticResource SmallTextBlock}" Text="{Binding RegisteredVariableCount}"></TextBlock>
+                </Grid>
+                <Grid Style="{StaticResource StateGrid}">
+                    <TextBlock Grid.Column="0" Style="{StaticResource StateLabel}">Registering Object:</TextBlock>
+                    <TextBlock Grid.Column="1" Style="{StaticResource SmallTextBlock}" Text="{Binding RegisteringObject}"></TextBlock>
+                </Grid>
+                <Grid Style="{StaticResource StateGrid}">
+                    <TextBlock Grid.Column="0" Style="{StaticResource StateLabel}">Current recursion depth:</TextBlock>
+                    <TextBlock Grid.Column="1" Style="{StaticResource SmallTextBlock}" Text="{Binding CurrentRecursionDepth}"></TextBlock>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

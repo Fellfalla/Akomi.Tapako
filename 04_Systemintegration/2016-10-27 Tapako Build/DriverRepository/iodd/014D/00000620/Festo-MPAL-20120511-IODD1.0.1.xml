@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IODevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.io-link.com/IODD/2009/11" xsi:schemaLocation="http://www.io-link.com/IODD/2009/11 IODD1.0.1.xsd">
+    <DocumentInfo version="V1.1" releaseDate="2012-05-11" copyright="Copyright 2011, Festo AG &amp; Co. KG" />
+    <ProfileHeader>
+        <ProfileDeviceIdentification>IO-Link Device Profile</ProfileDeviceIdentification>
+        <ProfileRevision>1.00</ProfileRevision>
+        <ProfileName>Device Profile for IO-Link Devices</ProfileName>
+        <ProfileSource>IO-Link Consortium</ProfileSource>
+        <ProfileClassID>Device</ProfileClassID>
+        <ISO15745Reference>
+            <ISO15745Part>1</ISO15745Part>
+            <ISO15745Edition>1</ISO15745Edition>
+            <ProfileTechnology>IODD</ProfileTechnology>
+        </ISO15745Reference>
+    </ProfileHeader>
+    <ProfileBody>
+        <DeviceIdentity vendorId="333" vendorName="Festo AG &amp; Co. KG" deviceId="1568">
+            <VendorText textId="TI_VendorText"/>
+            <VendorUrl textId="TI_VendorUrl"/>
+            <VendorLogo name="Festo-logo.png"/>
+            <DeviceFamily textId="TI_DeviceFamily"/>
+            <DeviceVariantCollection>
+                <DeviceVariant productId="575667" hardwareRevision="1" firmwareRevision="1" deviceSymbol="Festo-MPAL-pic.png" deviceIcon="Festo-MPAL-icon.png">
+                    <ProductName textId="TI_DeviceName"/>
+                    <ProductText textId="TI_DeviceText"/>
+                </DeviceVariant>
+            </DeviceVariantCollection>
+        </DeviceIdentity>
+        <DeviceFunction>
+            <DatatypeCollection>
+            <Datatype xsi:type="RecordT" id="DT_Valves_32" bitLength="32" subindexAccessSupported="false">
+                <RecordItem subindex="1" bitOffset="24">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_1_14"/>
+                </RecordItem>
+                <RecordItem subindex="2" bitOffset="25">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_1_12"/>
+                </RecordItem>
+                <RecordItem subindex="3" bitOffset="26">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_2_14"/>
+                </RecordItem>
+                <RecordItem subindex="4" bitOffset="27">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_2_12"/>
+                </RecordItem>
+                <RecordItem subindex="5" bitOffset="28">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_3_14"/>
+                </RecordItem>
+                <RecordItem subindex="6" bitOffset="29">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_3_12"/>
+                </RecordItem>
+                <RecordItem subindex="7" bitOffset="30">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_4_14"/>
+                </RecordItem>
+                <RecordItem subindex="8" bitOffset="31">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_4_12"/>
+                </RecordItem>
+                <RecordItem subindex="9" bitOffset="16">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_5_14"/>
+                </RecordItem>
+                <RecordItem subindex="10" bitOffset="17">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_5_12"/>
+                </RecordItem>
+                <RecordItem subindex="11" bitOffset="18">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_6_14"/>
+                </RecordItem>
+                <RecordItem subindex="12" bitOffset="19">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_6_12"/>
+                </RecordItem>
+                <RecordItem subindex="13" bitOffset="20">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_7_14"/>
+                </RecordItem>
+                <RecordItem subindex="14" bitOffset="21">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_7_12"/>
+                </RecordItem>
+                <RecordItem subindex="15" bitOffset="22">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_8_14"/>
+                </RecordItem>
+                <RecordItem subindex="16" bitOffset="23">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_8_12"/>
+                </RecordItem>
+                <RecordItem subindex="17" bitOffset="8">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_9_14"/>
+                </RecordItem>
+                <RecordItem subindex="18" bitOffset="9">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_9_12"/>
+                </RecordItem>
+                <RecordItem subindex="19" bitOffset="10">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_10_14"/>
+                </RecordItem>
+                <RecordItem subindex="20" bitOffset="11">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_10_12"/>
+                </RecordItem>
+                <RecordItem subindex="21" bitOffset="12">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_11_14"/>
+                </RecordItem>
+                <RecordItem subindex="22" bitOffset="13">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_11_12"/>
+                </RecordItem>
+                <RecordItem subindex="23" bitOffset="14">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_12_14"/>
+                </RecordItem>
+                <RecordItem subindex="24" bitOffset="15">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_12_12"/>
+                </RecordItem>
+                <RecordItem subindex="25" bitOffset="0">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_13_14"/>
+                </RecordItem>
+                <RecordItem subindex="26" bitOffset="1">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_13_12"/>
+                </RecordItem>
+                <RecordItem subindex="27" bitOffset="2">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_14_14"/>
+                </RecordItem>
+                <RecordItem subindex="28" bitOffset="3">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_14_12"/>
+                </RecordItem>
+                <RecordItem subindex="29" bitOffset="4">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_15_14"/>
+                </RecordItem>
+                <RecordItem subindex="30" bitOffset="5">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_15_12"/>
+                </RecordItem>
+                <RecordItem subindex="31" bitOffset="6">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_16_14"/>
+                </RecordItem>
+                <RecordItem subindex="32" bitOffset="7">
+                    <SimpleDatatype xsi:type="BooleanT" />
+                    <Name textId="TI_Valve_16_12"/>
+                </RecordItem>								
+				</Datatype>
+            </DatatypeCollection>
+      <VariableCollection>
+        <StdVariableRef id="V_DirectParameters_1"/>
+        <StdVariableRef id="V_DirectParameters_2"/>
+        <StdVariableRef id="V_VendorName" defaultValue="Festo AG &amp; Co. KG"/>
+		<StdVariableRef id="V_VendorText"/>
+        <StdVariableRef id="V_ProductName" defaultValue="VMPAL-EPL-IPO32"/>
+        <StdVariableRef id="V_ProductID"/>
+		<StdVariableRef id="V_ProductText"/> 
+        <StdVariableRef id="V_SerialNumber"/>
+        <StdVariableRef id="V_HardwareRevision" defaultValue="1"/>
+        <StdVariableRef id="V_FirmwareRevision" defaultValue="1"/>
+        <StdVariableRef id="V_ErrorCount"/>
+        <StdVariableRef id="V_ProcessDataOut"/>
+      </VariableCollection>
+            <ProcessDataCollection>
+                <ProcessData id="PD_ProcessData">
+                    <ProcessDataOut id="PD_ProcessDataOut" bitLength="32">
+                        <DatatypeRef datatypeId="DT_Valves_32"/>
+                        <Name textId="TI_Valves"/>
+                    </ProcessDataOut>
+                </ProcessData>
+            </ProcessDataCollection>
+            <EventCollection>
+                <Event code="20754" type="Error" mode="AppearDisappear">
+                    <Name textId="TI_Ev1" /> 
+                    <Description textId="TI_EvDescr1" /> 
+                </Event>
+            </EventCollection>
+            <UserInterface>
+                <MenuCollection>
+                    <Menu id="ME_Ident">
+                        <VariableRef variableId="V_VendorName" />
+                        <VariableRef variableId="V_ProductName" />
+                        <VariableRef variableId="V_ProductID" />
+                        <VariableRef variableId="V_SerialNumber" />
+                        <VariableRef variableId="V_HardwareRevision"/>
+                        <VariableRef variableId="V_FirmwareRevision"/>
+                    </Menu>
+                    <Menu id="ME_Observe">
+                        <VariableRef variableId="V_ErrorCount"/>
+                        <VariableRef variableId="V_ProcessDataOut" accessRightRestriction="ro"/>
+                    </Menu>
+                </MenuCollection>
+                <ObserverRoleMenuSet>
+                    <DeviceIdentificationMenu menuId="ME_Ident"/>
+                    <ObservationMenu menuId="ME_Observe"/>
+                </ObserverRoleMenuSet>
+                <MaintenanceRoleMenuSet>
+                    <DeviceIdentificationMenu menuId="ME_Ident"/>
+                    <ObservationMenu menuId="ME_Observe"/>
+                </MaintenanceRoleMenuSet>
+                <SpecialistRoleMenuSet>
+                    <DeviceIdentificationMenu menuId="ME_Ident"/>
+                    <ObservationMenu menuId="ME_Observe"/>
+                </SpecialistRoleMenuSet>
+            </UserInterface>
+        </DeviceFunction>
+    </ProfileBody>
+    <CommNetworkProfile xsi:type="IOLinkCommNetworkProfileT" iolinkRevision="V1.0">
+        <TransportLayers>
+            <PhysicalLayer physics="2" baudrate="COM3" minCycleTime="800" sioSupported="false"/>
+        </TransportLayers>
+    </CommNetworkProfile>
+    <ExternalTextCollection>
+        <PrimaryLanguage xml:lang="en">
+            <Text id="TI_VendorText" value="" />
+            <Text id="TI_VendorUrl" value="http://www.festo.com" />
+            <Text id="TI_DeviceFamily" value="Valves MPAL" />
+            <Text id="TI_DeviceName" value="VMPAL-EPL-IPO32" />
+            <Text id="TI_DeviceText" value="16 Valves" />
+            <Text id="TI_Valves" value="Valves" />
+            <Text id="TI_Valve_1_12" value="Valve 1 solenoid 12" />
+            <Text id="TI_Valve_1_14" value="Valve 1 solenoid 14" />
+            <Text id="TI_Valve_2_12" value="Valve 2 solenoid 12" />
+            <Text id="TI_Valve_2_14" value="Valve 2 solenoid 14" />
+            <Text id="TI_Valve_3_12" value="Valve 3 solenoid 12" />
+            <Text id="TI_Valve_3_14" value="Valve 3 solenoid 14" />
+            <Text id="TI_Valve_4_12" value="Valve 4 solenoid 12" />
+            <Text id="TI_Valve_4_14" value="Valve 4 solenoid 14" />
+            <Text id="TI_Valve_5_12" value="Valve 5 solenoid 12" />
+            <Text id="TI_Valve_5_14" value="Valve 5 solenoid 14" />
+            <Text id="TI_Valve_6_12" value="Valve 6 solenoid 12" />
+            <Text id="TI_Valve_6_14" value="Valve 6 solenoid 14" />
+            <Text id="TI_Valve_7_12" value="Valve 7 solenoid 12" />
+            <Text id="TI_Valve_7_14" value="Valve 7 solenoid 14" />
+            <Text id="TI_Valve_8_12" value="Valve 8 solenoid 12" />
+            <Text id="TI_Valve_8_14" value="Valve 8 solenoid 14" />
+            <Text id="TI_Valve_9_12" value="Valve 9 solenoid 12" />
+            <Text id="TI_Valve_9_14" value="Valve 9 solenoid 14" />
+            <Text id="TI_Valve_10_12" value="Valve 10 solenoid 12" />
+            <Text id="TI_Valve_10_14" value="Valve 10 solenoid 14" />
+            <Text id="TI_Valve_11_12" value="Valve 11 solenoid 12" />
+            <Text id="TI_Valve_11_14" value="Valve 11 solenoid 14" />
+            <Text id="TI_Valve_12_12" value="Valve 12 solenoid 12" />
+            <Text id="TI_Valve_12_14" value="Valve 12 solenoid 14" />
+            <Text id="TI_Valve_13_12" value="Valve 13 solenoid 12" />
+            <Text id="TI_Valve_13_14" value="Valve 13 solenoid 14" />
+            <Text id="TI_Valve_14_12" value="Valve 14 solenoid 12" />
+            <Text id="TI_Valve_14_14" value="Valve 14 solenoid 14" />
+            <Text id="TI_Valve_15_12" value="Valve 15 solenoid 12" />
+            <Text id="TI_Valve_15_14" value="Valve 15 solenoid 14" />
+            <Text id="TI_Valve_16_12" value="Valve 16 solenoid 12" />
+            <Text id="TI_Valve_16_14" value="Valve 16 solenoid 14" />
+            <Text id="TI_Ev1" value="Event1" />
+            <Text id="TI_EvDescr1" value="Undervoltage in actuator supply" />
+        </PrimaryLanguage>
+        <Language xml:lang="de">
+            <Text id="TI_VendorText" value="" />
+            <Text id="TI_VendorUrl" value="http://www.festo.com" />
+            <Text id="TI_DeviceFamily" value="Ventile MPAL" />
+            <Text id="TI_DeviceName" value="VMPAL-EPL-IPO32" />
+            <Text id="TI_DeviceText" value="16 Ventile" />
+            <Text id="TI_Valves" value="Ventile" />
+            <Text id="TI_Valve_1_12" value="Ventil 1 Magnet 12" />
+            <Text id="TI_Valve_1_14" value="Ventil 1 Magnet 14" />
+            <Text id="TI_Valve_2_12" value="Ventil 2 Magnet 12" />
+            <Text id="TI_Valve_2_14" value="Ventil 2 Magnet 14" />
+            <Text id="TI_Valve_3_12" value="Ventil 3 Magnet 12" />
+            <Text id="TI_Valve_3_14" value="Ventil 3 Magnet 14" />
+            <Text id="TI_Valve_4_12" value="Ventil 4 Magnet 12" />
+            <Text id="TI_Valve_4_14" value="Ventil 4 Magnet 14" />
+            <Text id="TI_Valve_5_12" value="Ventil 5 Magnet 12" />
+            <Text id="TI_Valve_5_14" value="Ventil 5 Magnet 14" />
+            <Text id="TI_Valve_6_12" value="Ventil 6 Magnet 12" />
+            <Text id="TI_Valve_6_14" value="Ventil 6 Magnet 14" />
+            <Text id="TI_Valve_7_12" value="Ventil 7 Magnet 12" />
+            <Text id="TI_Valve_7_14" value="Ventil 7 Magnet 14" />
+            <Text id="TI_Valve_8_12" value="Ventil 8 Magnet 12" />
+            <Text id="TI_Valve_8_14" value="Ventil 8 Magnet 14" />
+            <Text id="TI_Valve_9_12" value="Ventil 9 Magnet 12" />
+            <Text id="TI_Valve_9_14" value="Ventil 9 Magnet 14" />
+            <Text id="TI_Valve_10_12" value="Ventil 10 Magnet 12" />
+            <Text id="TI_Valve_10_14" value="Ventil 10 Magnet 14" />
+            <Text id="TI_Valve_11_12" value="Ventil 11 Magnet 12" />
+            <Text id="TI_Valve_11_14" value="Ventil 11 Magnet 14" />
+            <Text id="TI_Valve_12_12" value="Ventil 12 Magnet 12" />
+            <Text id="TI_Valve_12_14" value="Ventil 12 Magnet 14" />
+            <Text id="TI_Valve_13_12" value="Ventil 13 Magnet 12" />
+            <Text id="TI_Valve_13_14" value="Ventil 13 Magnet 14" />
+            <Text id="TI_Valve_14_12" value="Ventil 14 Magnet 12" />
+            <Text id="TI_Valve_14_14" value="Ventil 14 Magnet 14" />
+            <Text id="TI_Valve_15_12" value="Ventil 15 Magnet 12" />
+            <Text id="TI_Valve_15_14" value="Ventil 15 Magnet 14" />
+            <Text id="TI_Valve_16_12" value="Ventil 16 Magnet 12" />
+            <Text id="TI_Valve_16_14" value="Ventil 16 Magnet 14" />
+            <Text id="TI_Ev1" value="Event1" />
+            <Text id="TI_EvDescr1" value="Unterspannung in Aktuatorversorgung" />
+        </Language>
+    </ExternalTextCollection>
+    <Stamp crc="3960256782"><Checker name="IODD-Checker V1.0.7" version="V1.0.7.0"/></Stamp>
+</IODevice>

@@ -1,0 +1,14 @@
+﻿<!--'M1UIC1'-->
+<IDevice>
+  <PhysicalDescription>
+    <DeviceFrame>
+      <Unit>cm</Unit>
+      <PositionX>1.9</PositionX>
+      <PositionY>-98.5</PositionY>
+      <PositionZ>19</PositionZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <RotationZ>0</RotationZ>
+    </DeviceFrame>
+  </PhysicalDescription>
+</IDevice>

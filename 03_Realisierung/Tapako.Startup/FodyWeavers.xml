@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Weavers>
+<Costura>
+    <ExcludeAssemblies>
+        System
+        Microsoft.CSharp
+        System
+        System.Core
+        System.Data
+        System.Data.DataSetxtensions
+        System.Xaml
+        System.Xml
+        System.Xml.Linq
+        PresentationCore
+        PresentationFramework
+    </ExcludeAssemblies>
+</Costura>
+</Weavers>

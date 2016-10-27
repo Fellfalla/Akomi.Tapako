@@ -1,0 +1,12 @@
+﻿08002700FC78
+Test
+08002700FC79
+test2
+080027004C78
+Beckhoff
+3417EBA946F5
+Windows7.dll
+BCEE7B594D76
+BeckhoffPlcDriver.dll
+0001051825A2
+BeckhoffPlcDriver.dll

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.io-link.com/IODD/2009/11" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:iodd="http://www.io-link.com/IODD/2009/11" targetNamespace="http://www.io-link.com/IODD/2009/11" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.1">
+	<xsd:include schemaLocation="IODD-Primitives1.0.1.xsd"/>
+	<xsd:complexType name="UIDataItemRefT" abstract="true">
+		<xsd:attribute name="variableId" type="RefT" use="required"/>
+		<xsd:attribute name="gradient" type="xsd:decimal"/>
+		<xsd:attribute name="offset" type="xsd:decimal"/>
+		<xsd:attribute name="unitCode" type="xsd:positiveInteger"/>
+		<xsd:attribute name="accessRightRestriction" type="AccessRightsT"/>
+		<xsd:attribute name="displayFormat">
+			<xsd:annotation>
+				<xsd:documentation>Button format only for SimpleDataTypes. Writes default value to specified index.</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="Bin"/>
+					<xsd:enumeration value="Dec"/>
+					<xsd:enumeration value="Hex"/>
+					<xsd:enumeration value="Button"/>
+					<xsd:enumeration value="Event"/>
+					<xsd:enumeration value="MasterCycleTime"/>
+					<xsd:enumeration value="MinCycleTime"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="buttonValue" type="xsd:normalizedString"/>
+	</xsd:complexType>
+	<xsd:complexType name="UIVariableRefT">
+		<xsd:complexContent>
+			<xsd:extension base="UIDataItemRefT"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="UIRecordItemRefT">
+		<xsd:complexContent>
+			<xsd:extension base="UIDataItemRefT">
+				<xsd:attribute name="subindex" type="SubindexT" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="UIMenuRefSimpleT">
+		<xsd:attribute name="menuId" type="RefT" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="UIMenuRefT">
+		<xsd:complexContent>
+			<xsd:extension base="UIMenuRefSimpleT">
+				<xsd:sequence>
+					<xsd:element name="Condition" type="ConditionT" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="UserInterfaceT">
+		<xsd:sequence>
+			<xsd:element name="MenuCollection" type="MenuCollectionT"/>
+			<xsd:element name="ObserverRoleMenuSet" type="MenuSetT"/>
+			<xsd:element name="MaintenanceRoleMenuSet" type="MenuSetT"/>
+			<xsd:element name="SpecialistRoleMenuSet" type="MenuSetT"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MenuSetT">
+		<xsd:sequence>
+			<xsd:element name="IdentificationMenu" type="UIMenuRefSimpleT"/>
+			<xsd:element name="ParameterMenu" type="UIMenuRefSimpleT" minOccurs="0"/>
+			<xsd:element name="ObservationMenu" type="UIMenuRefSimpleT" minOccurs="0"/>
+			<xsd:element name="DiagnosisMenu" type="UIMenuRefSimpleT" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MenuT">
+		<xsd:sequence>
+			<xsd:element name="Name" type="TextRefT" minOccurs="0"/>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="VariableRef" type="UIVariableRefT"/>
+				<xsd:element name="MenuRef" type="UIMenuRefT"/>
+				<xsd:element name="RecordItemRef" type="UIRecordItemRefT"/>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="IdT" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="MenuCollectionT">
+		<xsd:complexContent>
+			<xsd:extension base="CollectionT">
+				<xsd:sequence>
+					<xsd:element name="Menu" type="MenuT" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>
