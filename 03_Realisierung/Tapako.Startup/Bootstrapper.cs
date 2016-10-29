@@ -1,8 +1,8 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using Akomi.InformationModel.Device.Parametrization;
-using Akomi.Logger;
 using Microsoft.Practices.Unity;
 using Prism.Logging;
 using Prism.Regions;
@@ -111,7 +111,7 @@ namespace Tapako.Startup
         /// <returns></returns>
         protected override ILoggerFacade CreateLogger()
         {
-        return new LoggerFacade();
+            return new LoggerFacade();
         }
 
         protected override RegionAdapterMappings ConfigureRegionAdapterMappings()
@@ -123,6 +123,29 @@ namespace Tapako.Startup
             return mappings;
         }
 
+            public class LoggerFacade : ILoggerFacade
+    {
+        public void Log(string message, Category category, Priority priority)
+        {
+            switch (category)
+            {
+                case Category.Debug:
+                    Akomi.Logger.Logger.Info(message);   //todo: Debug Nachtrichten hizufügen
+                    break;
+                case Category.Exception:
+                    Akomi.Logger.Logger.Error(message);
+                    break;
+                case Category.Info:
+                    Akomi.Logger.Logger.Info(message);
+                    break;
+                case Category.Warn:
+                    Akomi.Logger.Logger.Warning(message);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("category", category, null);
+            }
+        }
 
+    }
     }
 }

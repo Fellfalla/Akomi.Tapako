@@ -35,6 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akomi.Randomizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Randomizer.0.2.0.9\lib\net45\Akomi.Randomizer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -59,6 +71,9 @@
       <Project>{0DB79731-AE3C-4BD2-8E6E-CD70598F22E0}</Project>
       <Name>Tapako.Design</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

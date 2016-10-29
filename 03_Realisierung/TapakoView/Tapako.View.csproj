@@ -66,28 +66,21 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Logger, Version=1.0.5820.40274, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Utilities.dll</HintPath>
+    <Reference Include="Akomi.Utilities.Extended, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.Extended.0.2.0.9\lib\net45\Akomi.Utilities.Extended.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Utilities.Extended">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Utilities.Extended.dll</HintPath>
-    </Reference>
-    <Reference Include="Akomi.Visuals">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Visuals.dll</HintPath>
-    </Reference>
-    <Reference Include="ExtensionMethodsCollection">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
-    </Reference>
-    <Reference Include="ImageExtensionMethods">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ImageExtensionMethods.dll</HintPath>
+    <Reference Include="Akomi.Visuals, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Visuals.0.2.0.9\lib\net45\Akomi.Visuals.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
       <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
@@ -302,16 +295,6 @@
     <Resource Include="assets\Background.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\..\Bilder\IconInv.ico">
-      <Link>IconInv.ico</Link>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="..\..\Bilder\Icon4.ico">
-      <Link>assets\Icon4.ico</Link>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="assets\load.png" />
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +302,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\undone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\08_Bilder\Icon4.ico">
+      <Link>assets\Icon4.ico</Link>
+    </Resource>
+    <Resource Include="..\..\08_Bilder\IconInv.ico">
+      <Link>assets\IconInv.ico</Link>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

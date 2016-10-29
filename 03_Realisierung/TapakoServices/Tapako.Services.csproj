@@ -41,27 +41,20 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.InformationModel.Skills.SkillCatalogue">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.Skills.SkillCatalogue.dll</HintPath>
+    <Reference Include="Akomi.InformationModel.Skills.SkillCatalogue, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.Skills.SkillCatalogue.0.2.0.11\lib\net45\Akomi.InformationModel.Skills.SkillCatalogue.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Logger">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
-    </Reference>
-    <Reference Include="ExtensionMethodsCollection">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
-    </Reference>
-    <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prism.Core.6.2.0\lib\net45\Prism.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="Tapako.Utilities.DeviceSelector">
-      <HintPath>..\..\..\04_Systemintegration\Tapako.Utilities.DeviceSelector.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -76,7 +69,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReferenceToHostInputParam.cs" />
     <Compile Include="ReferenceToHostOutputParam.cs" />
-    <Compile Include="ReferencingDeviceSkillBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

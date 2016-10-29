@@ -41,11 +41,16 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Akomi.Logger">
       <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,13 +60,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tapako.DeviceInformationManagement\Tapako.DeviceInformationManagement.csproj">
-      <Project>{226E53EF-9012-4A57-BAB0-48EC2324755F}</Project>
-      <Name>Tapako.DeviceInformationManagement</Name>
-    </ProjectReference>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="..\Tapako.Framework\Tapako.Framework.csproj">
+      <Project>{15978331-FD8B-4BFE-A509-ECAC887D53E7}</Project>
+      <Name>Tapako.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

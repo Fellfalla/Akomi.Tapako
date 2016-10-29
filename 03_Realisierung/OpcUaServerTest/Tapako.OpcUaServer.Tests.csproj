@@ -50,9 +50,21 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akomi.Randomizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Randomizer.0.2.0.9\lib\net45\Akomi.Randomizer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Akomi.Server, Version=2.1.6016.32194, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Dynamischer OPC UA Server\04_Systemintegration\Akomi.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <Private>False</Private>
@@ -77,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="UIMap.uitest" />
   </ItemGroup>
   <ItemGroup>

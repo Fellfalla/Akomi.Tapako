@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:logger="clr-namespace:Akomi.Logger;assembly=Akomi.Logger"
-             xmlns:logging="clr-namespace:Prism.Logging;assembly=Prism"
              xmlns:behaviors="clr-namespace:Tapako.View.Behaviors"
+             xmlns:logging="clr-namespace:Akomi.Logger;assembly=Akomi.Utilities"
+             xmlns:designTime="clr-namespace:Tapako.ViewModel.DesignTime;assembly=Tapako.ViewModel.DesignTime"
              mc:Ignorable="d"
              d:DataContext="{d:DesignInstance designTime:TapakoDesignViewModel, IsDesignTimeCreatable=True}"
              d:DesignHeight="900"
@@ -171,7 +171,7 @@
                 </Style>
             </ListBox.ItemContainerStyle>
             <ListBox.ItemTemplate>
-                <DataTemplate DataType="{x:Type logger:Message}">
+                <DataTemplate DataType="{x:Type logging:Message}">
                     <Border x:Name="LogMessageBorder" BorderThickness="1" Margin="0,0,0,0">
                         <Border.Style>
                             <Style TargetType="{x:Type Border}">

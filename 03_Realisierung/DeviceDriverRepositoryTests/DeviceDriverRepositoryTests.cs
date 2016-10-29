@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Akomi.InformationModel.Component.Identification;
 using Akomi.InformationModel.Device;
-using Akomi.InformationModel.Skills.SkillCatalogue.SearchForSubdevices;
+using Akomi.InformationModel.Skills.SkillCatalogue;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tapako.DeviceInformationManagement.InformationSources;
 using Tapako.Repositories.DeviceDriverRepository;

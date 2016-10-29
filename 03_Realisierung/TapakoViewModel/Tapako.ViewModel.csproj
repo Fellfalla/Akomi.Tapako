@@ -41,27 +41,25 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.InformationModel.Skills.SkillCatalogue">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.Skills.SkillCatalogue.dll</HintPath>
+    <Reference Include="Akomi.InformationModel.Skills.SkillCatalogue, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.Skills.SkillCatalogue.0.2.0.11\lib\net45\Akomi.InformationModel.Skills.SkillCatalogue.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Logger">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Utilities">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Utilities.dll</HintPath>
+    <Reference Include="Akomi.Utilities.Extended, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.Extended.0.2.0.9\lib\net45\Akomi.Utilities.Extended.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Utilities.Extended">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Utilities.Extended.dll</HintPath>
-    </Reference>
-    <Reference Include="Akomi.Visuals">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Visuals.dll</HintPath>
-    </Reference>
-    <Reference Include="ExtensionMethodsCollection, Version=1.0.5932.27722, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
+    <Reference Include="Akomi.Visuals, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Visuals.0.2.0.9\lib\net45\Akomi.Visuals.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -104,9 +102,9 @@
       <Project>{4a3cb9cf-2ecf-413b-90df-06ba45cc2c45}</Project>
       <Name>Tapako.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tapako.DeviceInformationManagement\Tapako.DeviceInformationManagement.csproj">
-      <Project>{226E53EF-9012-4A57-BAB0-48EC2324755F}</Project>
-      <Name>Tapako.DeviceInformationManagement</Name>
+    <ProjectReference Include="..\Tapako.Framework.CommonDrivers\Tapako.Framework.CommonDrivers.csproj">
+      <Project>{6c8d8a5b-f5da-4502-901d-1d2264b079ea}</Project>
+      <Name>Tapako.Framework.CommonDrivers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tapako.Framework\Tapako.Framework.csproj">
       <Project>{15978331-FD8B-4BFE-A509-ECAC887D53E7}</Project>
@@ -115,10 +113,6 @@
     <ProjectReference Include="..\Tapako.Repositories.SubdeviceStorage\Tapako.Repositories.SubdeviceStorage.csproj">
       <Project>{fb55796f-2edb-460b-9030-a967d7f37e60}</Project>
       <Name>Tapako.Repositories.SubdeviceStorage</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TapakoServices\Tapako.Services.csproj">
-      <Project>{C495FBD3-2DC5-4854-A518-2C11184B81F4}</Project>
-      <Name>Tapako.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\VirtualRepresentationRepository\Tapako.Repositories.VirtualRepresentationRepository.csproj">
       <Project>{ACAD0C65-27F7-4F18-8E8A-4940896F26AF}</Project>

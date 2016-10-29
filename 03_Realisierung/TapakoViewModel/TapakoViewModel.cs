@@ -15,7 +15,6 @@ using Akomi.Logger;
 using Akomi.Utilities;
 using ExtensionMethodsCollection;
 using Prism.Commands;
-using Prism.Logging;
 using Prism.Mvvm;
 using Tapako.DeviceInformationManagement;
 using Tapako.DeviceInformationManagement.IO;

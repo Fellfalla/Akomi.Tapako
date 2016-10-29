@@ -8,7 +8,6 @@ using System.Windows.Data;
 using Akomi.InformationModel.Device;
 using Akomi.Logger;
 using Prism.Commands;
-using Prism.Logging;
 using Tapako.Utilities.UniversalHostSearch;
 
 namespace Tapako.ViewModel.DesignTime

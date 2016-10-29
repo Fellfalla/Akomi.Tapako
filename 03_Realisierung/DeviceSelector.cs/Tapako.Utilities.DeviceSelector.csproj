@@ -45,20 +45,20 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Logger">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
+    <Reference Include="Akomi.Randomizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Randomizer.0.2.0.9\lib\net45\Akomi.Randomizer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="ExtensionMethodsCollection">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="RandomExtension">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\RandomExtension.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -107,10 +107,6 @@
       <Project>{9238c7fb-45e0-4a2f-93f9-1d8706e05113}</Project>
       <Name>Tapako.Repositories.DeviceDriverRepository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tapako.DeviceInformationManagement\Tapako.DeviceInformationManagement.csproj">
-      <Project>{226e53ef-9012-4a57-bab0-48ec2324755f}</Project>
-      <Name>Tapako.DeviceInformationManagement</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Tapako.Framework\Tapako.Framework.csproj">
       <Project>{15978331-fd8b-4bfe-a509-ecac887d53e7}</Project>
       <Name>Tapako.Framework</Name>
@@ -125,7 +121,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\..\Bilder\Icon3.ico">
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\08_Bilder\Icon3.ico">
       <Link>Resources\Icon3.ico</Link>
     </Resource>
   </ItemGroup>

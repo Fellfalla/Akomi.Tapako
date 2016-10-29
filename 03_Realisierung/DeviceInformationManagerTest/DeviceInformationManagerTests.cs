@@ -1,9 +1,9 @@
 ﻿using System;
 using Akomi.InformationModel.Component.Identification;
-using Akomi.InformationModel.Component.ProductionData;
+using Akomi.InformationModel.Component.ManufacturingData;
 using Akomi.InformationModel.Datatypes;
 using Akomi.InformationModel.Device;
-using Akomi.InformationModel.Skills.SkillCatalogue.SearchForSubdevices;
+using Akomi.InformationModel.Skills.SkillCatalogue;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tapako.DeviceInformationManagement;
 using Tapako.DeviceInformationManagement.InformationSources;
@@ -94,7 +94,7 @@ namespace DeviceInformationManagerTests
                     PhysicalAddress = "000000000001",
                 },
 
-                ProductionData = new ProductionData()
+                ManufacturingData = new ManufacturingData()
                 {
                     ManufacturerAddress = new Address() { Name = "der traurige Mann" }
                 }

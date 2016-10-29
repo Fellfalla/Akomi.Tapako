@@ -54,7 +54,7 @@
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>..\..\Bilder\IconInv.ico</ApplicationIcon>
+    <ApplicationIcon>..\..\08_Bilder\IconInv.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
@@ -71,17 +71,23 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel">
-      <HintPath>..\..\..\..\Informationsmodell\04_Systemintegration\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Akomi.Logger">
       <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
     </Reference>
+    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Akomi.Utilities.Extended">
       <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Utilities.Extended.dll</HintPath>
     </Reference>
-    <Reference Include="Akomi.Visuals">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Visuals.dll</HintPath>
+    <Reference Include="Akomi.Visuals, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Visuals.0.2.0.9\lib\net45\Akomi.Visuals.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ExtensionMethodsCollection">
       <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
@@ -235,10 +241,6 @@
       <Project>{15978331-FD8B-4BFE-A509-ECAC887D53E7}</Project>
       <Name>Tapako.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TapakoServices\Tapako.Services.csproj">
-      <Project>{C495FBD3-2DC5-4854-A518-2C11184B81F4}</Project>
-      <Name>Tapako.Services</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TapakoViewModel\Tapako.ViewModel.csproj">
       <Project>{F9399730-B1DA-47D8-9CEF-5BD186406BE0}</Project>
       <Name>Tapako.ViewModel</Name>
@@ -283,12 +285,10 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\..\Bilder\Icon4.ico">
+    <Resource Include="..\..\08_Bilder\Icon4.ico">
       <Link>Icon4.ico</Link>
     </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="..\..\Bilder\IconInv.ico">
+    <Resource Include="..\..\08_Bilder\IconInv.ico">
       <Link>IconInv.ico</Link>
     </Resource>
   </ItemGroup>

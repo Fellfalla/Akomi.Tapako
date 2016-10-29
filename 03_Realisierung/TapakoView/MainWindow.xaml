@@ -12,7 +12,7 @@
         Height="660"
         Width="1174"
         mc:Ignorable="d"
-        Icon="IconInv.ico"
+        Icon="assets/IconInv.ico"
         FocusManager.FocusedElement="{Binding ElementName=ControlHostSearch}"
         d:DataContext="{d:DesignInstance designTime1:TapakoDesignViewModel, IsDesignTimeCreatable=True}"
         WindowStartupLocation="CenterScreen"
