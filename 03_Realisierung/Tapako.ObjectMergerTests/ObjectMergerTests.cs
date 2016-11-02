@@ -13,7 +13,7 @@ using Akomi.InformationModel.Datatypes;
 using Akomi.InformationModel.Device;
 using Akomi.InformationModel.Skills;
 using Akomi.InformationModel.Skills.Setup;
-using Akomi.InformationModel.Skills.SkillCatalogue.SearchForSubdevices;
+using Akomi.InformationModel.Skills.SkillCatalogue;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RandomExtension;
 using Tapako.Framework.ExtensionMethods;

@@ -1,14 +1,14 @@
 ﻿using Akomi.InformationModel.Skills.Setup;
-using Akomi.InformationModel.Skills.SkillCatalogue.DetectPresence;
+using Akomi.InformationModel.Skills.SkillCatalogue;
 
 namespace Tapako.TestClasses
 {
     /// <summary>
     /// Derivated Class for Skill <see cref="SkillDetectPresenceBase"/>: Image recognition system
     /// </summary>
-    public class SkillCheckPresenceDummy : SkillDetectPresenceDefault
+    public class SkillCheckPresenceDummy : SkillDetectPresenceBase
     {
-        public sealed override string IID { get; set; }
+        public sealed override int SetupId { get; set; }
 
         public sealed override object Container { get; set; }
 
@@ -22,7 +22,7 @@ namespace Tapako.TestClasses
         /// <summary>
         /// Constructor
         /// </summary>
-        public SkillCheckPresenceDummy(string pathToTestImage, object container)
+        public SkillCheckPresenceDummy(string pathToTestImage, object container) : base(null)
         {
             // Initialize ##################
             UserConstraints = new DetectPresenceInputParam();
@@ -30,7 +30,7 @@ namespace Tapako.TestClasses
             DefaultDeviceValues = new DetectPresenceInputParam();
             OutputParam = new DetectPresenceOutputParam();
             CurrentSetupStep = new SetupStep("CurrentSetupStep");
-            IID = "none";
+            SetupId = -1;
             Container = container;
             //##############################
 
@@ -80,9 +80,33 @@ namespace Tapako.TestClasses
             // hdev.ProcCall(dbs("IID"))
 
             //Calculate
-            OutputParam.Result = true;
+            OutputParam.Result = true.ToString();
         }
 
+        public override void SetupNext()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void SetupBack()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void SetupCancel()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void SetupCreateInstance()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void Reset()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 } 
     
