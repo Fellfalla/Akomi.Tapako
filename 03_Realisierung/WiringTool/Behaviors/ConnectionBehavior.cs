@@ -338,7 +338,7 @@ namespace Tapako.Utilities.WiringTool.Behaviors
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        private T GetObjectAtPoint<T>(Visual referenceVisual, Point point) where T : DependencyObject
+        private TDepObj GetObjectAtPoint<TDepObj>(Visual referenceVisual, Point point) where TDepObj : DependencyObject
         {
             DependencyObject current = null; // = result.VisualHit;
 
@@ -355,7 +355,7 @@ namespace Tapako.Utilities.WiringTool.Behaviors
 
             while (current != null)
             {
-                var atPoint = current as T;
+                var atPoint = current as TDepObj;
                 if (atPoint != null)
                 {
                     return atPoint;
