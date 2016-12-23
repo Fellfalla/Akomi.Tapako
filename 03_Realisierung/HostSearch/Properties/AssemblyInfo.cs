@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("PlcSearch")]
+[assembly: AssemblyTitle("Tapako.Utilities.UniversalHostSearch")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PlcSearch")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+//[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Tapako.Utilities.UniversalHostSearch")]
+//[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
