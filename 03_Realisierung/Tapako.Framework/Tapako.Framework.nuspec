@@ -14,19 +14,10 @@
     <dependencies>
       <dependency id="Akomi.InformationModel" />
       <dependency id="Akomi.Utilities" />
-      
     </dependencies>
-    <!--<references>
-      <reference file="UnifiedAutomation.UaBase.dll" />
-      <reference file="UnifiedAutomation.UaClient.dll" />
-      <reference file="UnifiedAutomation.UaServer.dll" />
-    </references>-->
+
   </metadata>
   <files>
-    <file src="..\Referenced Assemblies\UnifiedAutomation.UaBase.dll" target="lib/net45"/>
-    <file src="..\Referenced Assemblies\UnifiedAutomation.UaClient.dll" target="lib/net45"/>
-    <file src="..\Referenced Assemblies\UnifiedAutomation.UaServer.dll" target="lib/net45"/>
-    <file src="..\Referenced Assemblies\AutoItX3.Assembly.dll" target="lib/net45"/>
     <!--<file src="**\*.cs" target="src"></file>-->
     <!--<file src="**\bin\Debug\*.pdb" target="lib\net45" />-->
   </files>
