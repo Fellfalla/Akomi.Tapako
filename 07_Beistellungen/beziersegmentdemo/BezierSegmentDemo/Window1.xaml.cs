@@ -80,7 +80,7 @@ namespace BezierSegmentDemo
                 animation.Completed += (s, e) => this.Animate(property);
             }
 
-            this.figure.BeginAnimation(property, animation);
+            this.Figure1.BeginAnimation(property, animation);
         }
     }
 }

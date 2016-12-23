@@ -146,7 +146,7 @@
         
         <Border DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
             <Canvas ClipToBounds="True" Margin="4,0,-4,0">
-                <bezierSegmentDemo:BezierFigure x:Name="Figure"
+                <bezierSegmentDemo:BezierFigure x:Name="Figure1"
                     StartPoint="40,80"
                     StartBezierPoint="100,300"
                     EndBezierPoint="400,80"
