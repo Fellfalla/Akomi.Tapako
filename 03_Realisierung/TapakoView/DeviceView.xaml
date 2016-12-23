@@ -63,7 +63,7 @@
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="0" Grid.Column="0" x:Name="Content" MaxHeight="150">
+        <Grid Grid.Row="0" Grid.Column="0" x:Name="ContentGrid" MaxHeight="150">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -92,7 +92,7 @@
                    Style="{StaticResource HmiImage}"
                    Margin="5"
                    Height="100"
-                   MaxHeight="{Binding ElementName=Content,Path=ActualHeight}" />
+                   MaxHeight="{Binding ElementName=ContentGrid,Path=ActualHeight}" />
 
             <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource Heading}"
                    Content="{Binding BrowseName}" />
