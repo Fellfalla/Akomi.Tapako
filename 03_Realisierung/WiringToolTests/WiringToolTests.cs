@@ -8,9 +8,11 @@ namespace WiringToolTests
     [TestClass()]
     [DeploymentItem(@"Images/parent.png")]
     [DeploymentItem(@"Images/child.png")]
+    [Ignore]
     public class WiringToolTests
     {
         [TestMethod()]
+        [Timeout(1000)]
         public void ConnectionTest()
         {
             var parentList = new ConnectionList();

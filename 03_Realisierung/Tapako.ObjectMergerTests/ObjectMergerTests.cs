@@ -73,6 +73,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public async Task MergeNotEmptyDevicesShallNotThrowException()
         {
             var a = Task.Run(async () =>
@@ -94,6 +95,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void MergeEmptyDevicesShallCreateNewEmptyDevice()
         {
             var iDevice1 = new DeviceBase();
@@ -110,6 +112,7 @@ namespace Tapako.ObjectMergerTests
 
 
         [TestMethod]
+        [Ignore]
         public void MergeDevicesShallReturnValidResult()
         {
             var iDevice1 = new DeviceBase();
@@ -123,6 +126,7 @@ namespace Tapako.ObjectMergerTests
 
 
         [TestMethod]
+        [Ignore]
         public void MergeDeviceWithSkillsShallNotThrowError()
         {
             var iDevice1 = new DeviceBase();
@@ -167,6 +171,7 @@ namespace Tapako.ObjectMergerTests
 
 
         [TestMethod]
+        [Ignore]
         public void MergeDeviceWithSkillsToDeviceWithoutSkills()
         {
             var iDevice1 = new DeviceBase();
@@ -186,6 +191,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void MergeDeviceBaseSkillsShallWork()
         {
             var iDevice1 = new DeviceBase();
@@ -207,6 +213,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void MergeClassWithSkillsShallWork()
         {
             var class1 = new ClassWithSkills();
@@ -231,6 +238,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void MergeClassWithSkillsShallNotDuplicateSkillsWithDifferentInstances()
         {
             var class1 = new ClassWithSkills();
@@ -254,6 +262,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void MergeClassWithSkillsShallNotDuplicateSkillsWithDifferentInstancesMultipleTimes()
         {
 
@@ -287,6 +296,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void MergeHandlesStrategyContextRecursion()
         {
             var class1 = new ClassWithSkills();
@@ -463,6 +473,7 @@ namespace Tapako.ObjectMergerTests
 
         [TestMethod]
         [ExpectedException(typeof(FieldAccessException))]
+        [Ignore]
         public void MergerThrowsIfRecursionNotResolvable()
         {
             var class3 = new ClassWithRecursion();
@@ -485,6 +496,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void MergeClassWithSkillsShallNotDuplicateSkills()
         {
             var class1 = new ClassWithSkills();
@@ -572,6 +584,8 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Timeout(500)]
+        [Ignore]
         public void MergeObjectsShallMergeArrays()
         {
             var object1 = new int[] { 1, 2, 3 };
@@ -884,6 +898,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void IsNotMergeableClassesShallBeCopiedAndNotMerged()
         {
             NotMergeableSubClass subClass1 = new NotMergeableSubClass();
@@ -973,6 +988,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void DeviceStrategysShallNotCopiedIfNotExisting_1()
         {
             DeviceBase dev1 = new DeviceBase();
@@ -991,6 +1007,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void DeviceStrategysShallNotCopiedIfNotExisting_2()
         {
             DeviceBase dev1 = new DeviceBase();
@@ -1009,6 +1026,7 @@ namespace Tapako.ObjectMergerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void DeviceStrategysShallBeOverriddenAndNotMerged()
         {
             DeviceBase dev1 = new DeviceBase();

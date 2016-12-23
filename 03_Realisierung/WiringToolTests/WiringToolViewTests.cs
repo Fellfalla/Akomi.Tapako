@@ -10,6 +10,7 @@ namespace WiringToolTests
     public class WiringToolViewTests
     {
         [TestMethod()]
+        [Ignore]
         public void WiringToolViewTest()
         {
             WiringToolView window = new WiringToolView();

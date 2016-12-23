@@ -9,6 +9,7 @@ using Tapako.Utilities.UniversalHostSearch;
 namespace UniversalHostSearchTests1
 {
     [TestClass]
+    [Ignore]
     public class UniversalHostSearcherTest
     {
         private string subnetWithDot = "192.168.1.";
