@@ -46,15 +46,15 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TapakoSolutionInfo.cs">
+      <Link>Properties\TapakoSolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\TapakoVersionInfo.cs">
+      <Link>Properties\TapakoVersionInfo.cs</Link>
+    </Compile>
     <Compile Include="Framework\Constants.cs" />
     <Compile Include="DeviceInformationManagement\DeviceInformationManager.cs" />
     <Compile Include="DeviceInformationManagement\InformationSources\IDeviceCompletement.cs" />
@@ -82,6 +82,7 @@
     <Compile Include="Services\ReferenceToHostOutputParam.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Tapako.Framework.nuspec" />
     <None Include="DeviceInformationManagement\DIM.cd" />
     <None Include="DeviceInformationManagement\InformationSources\IInformationSource.cd" />
     <None Include="packages.config" />
