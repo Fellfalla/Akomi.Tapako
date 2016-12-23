@@ -209,7 +209,7 @@ namespace Tapako.Utilities.WiringTool.Behaviors
         /// </summary>
         /// <param name="sourceItem"></param>
         /// <param name="targetItem"></param>
-        private Wiring ConnectObjectsVisual<T>(T sourceItem, T targetItem) where T: FrameworkElement
+        private Wiring ConnectObjectsVisual<TFrameEle>(TFrameEle sourceItem, TFrameEle targetItem) where TFrameEle: FrameworkElement
         {
             var connections = Connections;
             Wiring wiring = default(Wiring);
@@ -336,7 +336,7 @@ namespace Tapako.Utilities.WiringTool.Behaviors
         /// Gibt das erste Objekt des entsprechenden Typs unter dem Mauszeiger zurück.
         /// Vorraussetzung ist, dass die property IshitTestVisible = true ist.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TDepObj"></typeparam>
         /// <returns></returns>
         private TDepObj GetObjectAtPoint<TDepObj>(Visual referenceVisual, Point point) where TDepObj : DependencyObject
         {
