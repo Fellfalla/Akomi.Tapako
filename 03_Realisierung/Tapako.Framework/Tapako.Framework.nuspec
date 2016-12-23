@@ -14,7 +14,7 @@
     <dependencies>
       <dependency id="Akomi.InformationModel" />
       <dependency id="Akomi.Utilities" />
-      <dependency id="CompareNETObjects" />
+      <!--<dependency id="CompareNETObjects" />-->
     </dependencies>
 
   </metadata>
