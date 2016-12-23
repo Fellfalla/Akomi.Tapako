@@ -12,7 +12,7 @@
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <dependencies>
-      <dependency id="KellermanSoftware.Compare-Net-Objects" />
+      <dependency id="CompareNETObjects" />
     </dependencies>
 
   </metadata>
