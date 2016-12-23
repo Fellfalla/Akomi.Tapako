@@ -9,6 +9,7 @@ using Akomi.Logger;
 using ExtensionMethodsCollection;
 using Tapako.DeviceInformationManagement.InformationSources;
 using Tapako.Framework;
+using Tapako.ObjectMerger;
 
 namespace Tapako.DeviceInformationManagement
 {
@@ -30,6 +31,7 @@ namespace Tapako.DeviceInformationManagement
         static DeviceInformationManager()
         {
             InformationSources = new List<IInformationSource>();
+            ObjectMergerLogger.SetInstance(new ObjectMergerLoggerAdapter());
         }
         #region Fields
         private static Stopwatch stopwatch = new Stopwatch();
@@ -179,6 +181,7 @@ namespace Tapako.DeviceInformationManagement
                     // Merge if information source was of instanziating type
                     if (!ReferenceEquals(newIDevice, iDevice)) 
                     {
+
                         iDevice = ObjectMerger.ObjectMerger.MergeObjects(iDevice, newIDevice);
                     }
                 }

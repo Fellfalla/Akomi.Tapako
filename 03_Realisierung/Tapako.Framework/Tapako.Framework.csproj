@@ -51,7 +51,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Tapako.ObjectMerger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Tapako.ObjectMerger.0.5.0.3\lib\net45\Tapako.ObjectMerger.dll</HintPath>
+      <HintPath>..\packages\Tapako.ObjectMerger.0.5.0.5\lib\net45\Tapako.ObjectMerger.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
@@ -63,6 +63,7 @@
     <Compile Include="..\TapakoVersionInfo.cs">
       <Link>Properties\TapakoVersionInfo.cs</Link>
     </Compile>
+    <Compile Include="DeviceInformationManagement\ObjectMergerLoggerAdapter.cs" />
     <Compile Include="Framework\Constants.cs" />
     <Compile Include="DeviceInformationManagement\DeviceInformationManager.cs" />
     <Compile Include="DeviceInformationManagement\InformationSources\IDeviceCompletement.cs" />
