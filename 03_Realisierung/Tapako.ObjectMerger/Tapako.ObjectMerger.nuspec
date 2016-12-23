@@ -12,7 +12,7 @@
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <dependencies>
-      <!--<dependency id="CompareNETObjects" />-->
+      <dependency id="CompareNETObjects" />
     </dependencies>
 
   </metadata>
