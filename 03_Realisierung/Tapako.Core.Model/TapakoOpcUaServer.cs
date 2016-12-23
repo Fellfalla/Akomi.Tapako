@@ -4,11 +4,11 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using Akomi.DynamicOpcUa;
 using Akomi.InformationModel.Device;
 using Akomi.InformationModel.Enums;
 using Akomi.InformationModel.Skills;
 using Akomi.Logger;
-using Akomi.Server;
 using ExtensionMethodsCollection;
 using Tapako.Framework;
 

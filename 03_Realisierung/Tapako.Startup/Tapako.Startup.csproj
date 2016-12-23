@@ -71,6 +71,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Akomi.DynamicOpcUa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\Akomi.DynamicOpcUa.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
       <Private>True</Private>
@@ -89,8 +93,16 @@
       <HintPath>..\packages\Akomi.Visuals.0.2.0.9\lib\net45\Akomi.Visuals.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutoItX3.Assembly, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a646454c8d475470, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\AutoItX3.Assembly.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ExtensionMethodsCollection">
       <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="Fasterflect, Version=2.1.3.0, Culture=neutral, PublicKeyToken=38d18473284c1ca7, processorArchitecture=MSIL">
+      <HintPath>..\packages\fasterflect.2.1.3\lib\net40\Fasterflect.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
@@ -135,12 +147,16 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="UnifiedAutomation.UaBase, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dynamischer OPC UA Server\04_Systemintegration\UnifiedAutomation.UaBase.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaBase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnifiedAutomation.UaClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaClient.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="UnifiedAutomation.UaServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dynamischer OPC UA Server\04_Systemintegration\UnifiedAutomation.UaServer.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -291,6 +307,9 @@
     <Resource Include="..\..\08_Bilder\IconInv.ico">
       <Link>IconInv.ico</Link>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="shematics.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Akomi.DynamicOpcUa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.23\lib\net45\Akomi.DynamicOpcUa.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\Akomi.DynamicOpcUa.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -53,12 +53,28 @@
       <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutoItX3.Assembly, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a646454c8d475470, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\AutoItX3.Assembly.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Fasterflect, Version=2.1.3.0, Culture=neutral, PublicKeyToken=38d18473284c1ca7, processorArchitecture=MSIL">
       <HintPath>..\packages\fasterflect.2.1.3\lib\net40\Fasterflect.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="UnifiedAutomation.UaBase, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaBase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnifiedAutomation.UaClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnifiedAutomation.UaServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\TapakoVersionInfo.cs">
@@ -83,7 +99,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FodyWeavers.xml" />
     <Content Include="shematics.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
