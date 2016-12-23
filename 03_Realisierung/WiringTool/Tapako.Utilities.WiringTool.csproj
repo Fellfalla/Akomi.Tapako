@@ -49,17 +49,11 @@
       <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ExtensionMethodsCollection">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
       <HintPath>..\packages\Prism.Core.6.2.0\lib\net45\Prism.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="RandomExtension">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\RandomExtension.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />

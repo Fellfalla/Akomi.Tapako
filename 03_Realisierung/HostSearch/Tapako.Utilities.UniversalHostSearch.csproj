@@ -50,16 +50,9 @@
       <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Logger">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
-    </Reference>
     <Reference Include="Akomi.Utilities, Version=1.0.6198.29879, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="ExtensionMethodsCollection, Version=1.0.5852.38781, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\ExtensionMethodsCollection.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
