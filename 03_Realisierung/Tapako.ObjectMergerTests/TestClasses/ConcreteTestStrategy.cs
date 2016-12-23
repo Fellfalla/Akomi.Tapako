@@ -2,7 +2,7 @@
 using Akomi.InformationModel.Component;
 using Akomi.InformationModel.Component.Identification;
 using Akomi.InformationModel.Device;
-using Akomi.InformationModel.Skills.SkillCatalogue.SearchForSubdevices;
+using Akomi.InformationModel.Skills.SkillCatalogue;
 using Tapako.Framework.ExtensionMethods;
 
 namespace Tapako.ObjectMergerTests.TestClasses

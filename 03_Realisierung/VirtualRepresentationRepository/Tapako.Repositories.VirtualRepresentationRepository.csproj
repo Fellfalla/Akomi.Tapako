@@ -90,6 +90,7 @@
     <Content Include="DriverRepository\BES_M12_MI_PSSIC20C_S04G\M2IS3.xml" />
     <Content Include="DriverRepository\BES_M12_MI_PSSIC20C_S04G\M2IS4.xml" />
     <Content Include="DriverRepository\BNI_IOL_802_000_Z036\M3SL1.xml" />
+    <Content Include="DriverRepository\BundRPlcDriver\0060651AAB62.xml" />
     <Content Include="DriverRepository\FC_302_VLT__Automation_Drive\020022G354.xml">
       <SubType>Designer</SubType>
     </Content>
