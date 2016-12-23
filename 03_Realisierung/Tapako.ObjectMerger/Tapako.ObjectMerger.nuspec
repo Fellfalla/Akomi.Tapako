@@ -12,8 +12,7 @@
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <dependencies>
-      <dependency id="Akomi.InformationModel" />
-      <dependency id="Akomi.Utilities" />
+      <dependency id="KellermanSoftware.Compare-Net-Objects" />
     </dependencies>
 
   </metadata>
