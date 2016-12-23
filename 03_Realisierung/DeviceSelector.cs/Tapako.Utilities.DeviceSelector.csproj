@@ -68,6 +68,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TapakoSolutionInfo.cs">
+      <Link>Properties\TapakoSolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="..\TapakoVersionInfo.cs">
       <Link>Properties\TapakoVersionInfo.cs</Link>
     </Compile>
@@ -122,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Tapako.Utilities.DeviceSelector.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="..\..\08_Bilder\Icon3.ico">

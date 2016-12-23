@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DeviceSelector.cs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+//[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DeviceSelector.cs")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+//[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -45,14 +45,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TapakoSolutionInfo.cs">
+      <Link>Properties\TapakoSolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\TapakoVersionInfo.cs">
+      <Link>Properties\TapakoVersionInfo.cs</Link>
+    </Compile>
     <Compile Include="DefaultPrimitiveCommunicationChannelDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Tapako.Framework.CommonDrivers.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

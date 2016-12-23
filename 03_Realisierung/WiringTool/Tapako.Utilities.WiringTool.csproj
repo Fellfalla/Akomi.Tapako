@@ -87,6 +87,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TapakoSolutionInfo.cs">
+      <Link>Properties\TapakoSolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="..\TapakoVersionInfo.cs">
       <Link>Properties\TapakoVersionInfo.cs</Link>
     </Compile>
@@ -136,6 +139,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Tapako.Utilities.WiringTool.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
