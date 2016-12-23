@@ -48,28 +48,24 @@ namespace Tapako.Utilities.WiringTool.ViewModel
             get { return "DesignModelTest"; }
         }
 
-        public string ParentName
+        public new string ParentName
         {
             get { return "Parent Design Device"; }
-            set { }
         }
 
-        public string ChildName
+        public new string ChildName
         {
             get { return "Child Design Device"; }
-            set { }
         }
 
-        public IHmiImage ParentHmiImage
+        public new IHmiImage ParentHmiImage
         {
             get { return new HmiImage(new ExternalDataType("bmp", GetRandomImageByteArray())); }
-            set { }
         }
 
-        public IHmiImage ChildHmiImage
+        public new IHmiImage ChildHmiImage
         {
             get { return new HmiImage(new ExternalDataType("bmp", GetRandomImageByteArray())); }
-            set { }
         }
 
 

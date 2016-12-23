@@ -95,13 +95,20 @@ namespace Tapako.ViewModel
                 await Logger.Info("Executing skill \"{0}\" asynchronously.", skill.Name);
                 //var task = Task.Factory.StartNew(skill.Execute);
                 //await skill.ExecuteAsync();
+
+                Exception ex = null;
                 try
                 {
                     await skill.ExecuteAsync();
                 }
                 catch (Exception e)
                 {
-                    Logger.Error(e.ToString(true));
+                    ex = e;
+                }
+
+                if (ex != null)
+                {
+                    await Logger.Error(ex.ToString(true));
                 }
 
             }
