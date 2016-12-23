@@ -62,8 +62,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Dynamischer OPC UA Server\04_Systemintegration\Akomi.Server.dll</HintPath>
     </Reference>
-    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6198.29879, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
