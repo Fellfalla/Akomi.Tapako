@@ -11,13 +11,13 @@
     <description>$description$</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
-    <dependencies>
+    <!--<dependencies>
       <dependency id="Akomi.InformationModel" />
       <dependency id="Akomi.Utilities" />
       <dependency id="Tapako.ObjectMerger" />
       <dependency id="Tapako.Framework" />
       <dependency id="Tapako.Utilities.WiringTool" />
-    </dependencies>
+    </dependencies>-->
 
   </metadata>
   <files>
