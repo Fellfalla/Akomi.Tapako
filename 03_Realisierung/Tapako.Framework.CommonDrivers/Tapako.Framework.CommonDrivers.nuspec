@@ -9,6 +9,8 @@
     <owners>$author$</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
+    <iconUrl>https://github.com/Fellfalla/Akomi.Tapako/raw/master/03_Realisierung/icon_64x64.png</iconUrl>
+    <projectUrl>https://github.com/Fellfalla/Akomi.Tapako</projectUrl>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <dependencies>
