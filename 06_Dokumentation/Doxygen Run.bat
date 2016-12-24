@@ -1,2 +1,0 @@
-doxygen doxyconfig
-Pause
