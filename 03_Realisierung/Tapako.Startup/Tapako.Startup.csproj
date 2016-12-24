@@ -304,14 +304,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(SolutionDir)..\..\..\Treiber\04_Systemintegration\*" "$(TargetDir)DriverRepository\" /S /Y /d
-xcopy "$(SolutionDir)VirtualRepresentationRepository\DriverRepository\*" "$(TargetDir)DriverRepository\" /S /Y /d
-xcopy "$(SolutionDir)DeviceDriverRepository\MacList.txt" "$(TargetDir)*" /Y /d
-
-xcopy "$(TargetDir)DriverRepository\*" "$(SolutionDir)..\04_Systemintegration\Tapako Current Build\DriverRepository\" /S /Y /d
-xcopy "$(SolutionDir)DeviceDriverRepository\MacList.txt" "$(SolutionDir)..\04_Systemintegration\Tapako Current Build\*" /Y /d
-xcopy "$(TargetPath)" "$(SolutionDir)..\04_Systemintegration\Tapako Current Build\*" /Y /d
-</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\packages\Fody.1.29.4\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
