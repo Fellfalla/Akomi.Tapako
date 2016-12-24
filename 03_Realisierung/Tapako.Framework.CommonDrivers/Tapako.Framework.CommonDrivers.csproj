@@ -47,12 +47,6 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\TapakoSolutionInfo.cs">
-      <Link>Properties\TapakoSolutionInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\TapakoVersionInfo.cs">
-      <Link>Properties\TapakoVersionInfo.cs</Link>
-    </Compile>
     <Compile Include="DefaultPrimitiveCommunicationChannelDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
