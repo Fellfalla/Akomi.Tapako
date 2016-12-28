@@ -119,8 +119,8 @@ namespace Tapako.Utilities.DeviceSelector
             }
             else if (!string.IsNullOrEmpty(item1) && item1.Contains(Separator))
             {
-                item1 = item1.Split(Separator).First().Replace('ß', '-');
                 item2 = item1.Split(Separator).Last().Replace('ß', '-');
+                item1 = item1.Split(Separator).First().Replace('ß', '-');
             }
 
             if (string.IsNullOrEmpty(item1))
