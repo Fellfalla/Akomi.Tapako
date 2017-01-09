@@ -35,8 +35,12 @@
       <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6198.29879, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects, Version=3.6.0.0, Culture=neutral, PublicKeyToken=d970ace04cc85217, processorArchitecture=MSIL">
+      <HintPath>..\packages\CompareNETObjects.3.06.0.0\lib\net45\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -46,15 +50,24 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <Reference Include="Tapako.ObjectMerger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tapako.ObjectMerger.0.5.0.15\lib\net45\Tapako.ObjectMerger.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Tapako.ObjectMerger.Attributes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tapako.ObjectMerger.Attributes.0.5.0.15\lib\net45\Tapako.ObjectMerger.Attributes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TapakoSolutionInfo.cs">
+      <Link>Properties\TapakoSolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\TapakoVersionInfo.cs">
+      <Link>Properties\TapakoVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="DeviceInformationManagement\ObjectMergerLoggerAdapter.cs" />
     <Compile Include="Framework\Constants.cs" />
     <Compile Include="DeviceInformationManagement\DeviceInformationManager.cs" />
     <Compile Include="DeviceInformationManagement\InformationSources\IDeviceCompletement.cs" />
@@ -82,19 +95,16 @@
     <Compile Include="Services\ReferenceToHostOutputParam.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AppReadme\Compare-NET-Objects-Help.chm" />
+    <None Include="Tapako.Framework.nuspec" />
     <None Include="DeviceInformationManagement\DIM.cd" />
     <None Include="DeviceInformationManagement\InformationSources\IInformationSource.cd" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tapako.ObjectMerger\Tapako.ObjectMerger.csproj">
-      <Project>{ebd11187-2bf8-4788-a641-271874842f35}</Project>
-      <Name>Tapako.ObjectMerger</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y /F "$(TargetPath)" "$(SolutionDir)..\..\04_Systemintegration\$(TargetFileName)*"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

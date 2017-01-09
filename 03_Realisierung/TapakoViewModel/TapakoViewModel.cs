@@ -200,6 +200,10 @@ namespace Tapako.ViewModel
         /// </summary>
         public TapakoViewModel(HostSearchViewModel hostSearchViewModel)
         {
+            if (hostSearchViewModel ==null)
+            {
+                hostSearchViewModel = new HostSearchViewModel(new UniversalHostSearchViewModel());
+            }
             HostSearchViewModel = hostSearchViewModel;
             hostSearchViewModel.SearchViewModel.Subnet = Constants.DefaultSubnet;
             hostSearchViewModel.HostDeviceSelected += (sender, viewModel) => SelectedHostDeviceTapako = viewModel;

@@ -8,6 +8,7 @@ using Tapako.Repositories.WiringInformationSource;
 namespace WiringInformationSourceTests
 {
     [TestClass()]
+    [Ignore]
     public class WiringInformationSourceTests
     {
         private WiringInformationSource _sut;

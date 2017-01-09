@@ -62,6 +62,7 @@ namespace DeviceDriverRepositoryTests
         }
 
         [TestMethod()]
+        [Ignore]
         public void GetDeviceInformationTest()
         {
 

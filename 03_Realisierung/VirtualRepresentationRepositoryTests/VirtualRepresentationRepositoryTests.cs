@@ -52,6 +52,7 @@ namespace VirtualRepresentationRepositoryTests
         }
 
         [TestMethod]
+        [Ignore]
         public void SaveBeckhoffDriver()
         {
             var sut = CreateNewHostDevice("129.187.158.64");

@@ -35,15 +35,12 @@
       <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Logger">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\Akomi.Logger.dll</HintPath>
-    </Reference>
     <Reference Include="Akomi.Randomizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Akomi.Randomizer.0.2.0.9\lib\net45\Akomi.Randomizer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Utilities, Version=1.0.6145.27149, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Utilities.0.2.0.9\lib\net45\Akomi.Utilities.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6198.29879, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Akomi.Visuals, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -55,9 +52,6 @@
     <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
       <HintPath>..\packages\Prism.Core.6.2.0\lib\net45\Prism.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="RandomExtension">
-      <HintPath>..\..\..\..\Sonstiges\04_Systemintegration\RandomExtension.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

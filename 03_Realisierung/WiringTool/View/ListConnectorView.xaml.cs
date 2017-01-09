@@ -248,7 +248,7 @@ namespace Tapako.Utilities.WiringTool.View
                     }
 
                     // Search for Visual nodes if no null items are wired
-                    FrameworkElement anchor1, anchor2;
+                    //FrameworkElement anchor1, anchor2;
                     //c.GetVisualAnchors(newWiring.Logical, out anchor1, out anchor2);
                     c.DrawConnection(newWiring);
                 }

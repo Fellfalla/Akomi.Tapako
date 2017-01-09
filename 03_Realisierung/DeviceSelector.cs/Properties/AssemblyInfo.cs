@@ -4,14 +4,16 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DeviceSelector.cs")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Tapako.Utilities.DeviceSelector")]
+[assembly: AssemblyDescription("The Device Selector is used to add Subsystems manually udner an AKOMI-Device.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DeviceSelector.cs")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+//[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Tapako.Utilities.DeviceSelector")]
+//[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+//[assembly: AssemblyCompany("Markus Weber")]
+//[assembly: AssemblyCopyright("Copyright © AKOMI 2016")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

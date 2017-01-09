@@ -8,6 +8,7 @@ namespace UniversalHostSearchTests1
     public class UniversalHostSearcherUiTest
     {
         [TestMethod]
+        [Ignore]
         public void SmokeTest()
         {
             var window = new Window();
@@ -17,6 +18,7 @@ namespace UniversalHostSearchTests1
             window.SizeToContent = SizeToContent.WidthAndHeight;
 
             window.ShowDialog();
+
             //viewModel.NewNetworkDeviceFound.ForEach(Console.WriteLine);
         }
     }

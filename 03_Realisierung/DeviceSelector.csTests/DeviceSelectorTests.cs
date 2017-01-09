@@ -12,6 +12,7 @@ namespace DeviceSelectorTests
     {
 
         [TestMethod()]
+        [Ignore]
         public void SelectDeviceTest()
         {
         
@@ -20,6 +21,7 @@ namespace DeviceSelectorTests
         }
 
         [TestMethod()]
+        [Ignore]
         public void SelectDeviceWithCustomSuggestionsTest()
         {
             IDevice device = new DeviceBase();
@@ -29,6 +31,7 @@ namespace DeviceSelectorTests
         }
 
         [TestMethod()]
+        [Ignore]
         public void SelectDeviceWithOverriddenSuggestions()
         {
 

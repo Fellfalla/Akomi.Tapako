@@ -11,7 +11,7 @@ namespace Tapako.Utilities.WiringTool.ViewModel
 {
     public class WiringToolViewModel : BindableBase
     {
-        private IList<Tuple<object, object>> _wiredConnections;
+        //private IList<Tuple<object, object>> _wiredConnections;
         private ICollection<object> _childConnections;
         private ICollection<object> _parentConnections;
         private IHmiImage _childHmiImage;

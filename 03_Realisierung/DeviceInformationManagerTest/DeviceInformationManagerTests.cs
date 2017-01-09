@@ -1,4 +1,5 @@
 ﻿using System;
+using Akomi.InformationModel.Component;
 using Akomi.InformationModel.Component.Identification;
 using Akomi.InformationModel.Component.ManufacturingData;
 using Akomi.InformationModel.Datatypes;
@@ -148,6 +149,7 @@ namespace DeviceInformationManagerTests
         }
 
         [TestMethod]
+        [Ignore]
         public void LoadBeckhoffPlcDriverShallWork()
         {
             DeviceInformationManager.RegisterInformationSource(new DeviceDriverRepository());
@@ -231,11 +233,13 @@ namespace DeviceInformationManagerTests
             DeviceInformationManager.CompleteDeviceInformation(iDevice1);
         }
 
+
         [TestMethod]
-        public void NewTest()
+        public void MergeSkillsTest()
         {
             DeviceInformationManager.RegisterInformationSource(new DeviceDriverRepository());
             var beckhoffDeivce = new DeviceBase();
+            beckhoffDeivce.Skills.Add(new SkillSearchForSubdeviceTest(null));
             beckhoffDeivce.Identification = new Identification();
             beckhoffDeivce.Identification.PhysicalAddress = ("0001051825A2");
             var completeDevice = DeviceInformationManager.CompleteDeviceInformation(beckhoffDeivce);
@@ -248,4 +252,45 @@ namespace DeviceInformationManagerTests
 
     }
 
+    class SkillSearchForSubdeviceTest : SkillSearchForSubdevicesBase
+    {
+        public SkillSearchForSubdeviceTest(IComponent context) : base(context)
+        {
+        }
+
+        public override void Calculate()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Execute()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetupNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetupBack()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetupCancel()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetupCreateInstance()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Reset()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

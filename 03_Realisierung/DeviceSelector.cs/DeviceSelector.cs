@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using Akomi.InformationModel.Component.Identification;
 using Akomi.InformationModel.Device;
@@ -18,6 +19,10 @@ namespace Tapako.Utilities.DeviceSelector
     /// </summary>
     public class DeviceSelector
     {
+        /// <summary>
+        /// The separator of a scanned item.
+        /// </summary>
+        private const char Separator ='\'';
 
         /// <summary>
         /// Wires the Connections of these 2 Connection Lists
@@ -98,17 +103,37 @@ namespace Tapako.Utilities.DeviceSelector
         public static DeviceBase SelectNewDevice(IDevice parent)
         {
             var instanceInformations = SelectDevice(new List<string>(), connectionParent: parent);
+            var item1 = instanceInformations.Item1;
+            var item2 = instanceInformations.Item2;
 
-            if (string.IsNullOrEmpty(instanceInformations.Item1))
+            if (string.IsNullOrEmpty(item1) && string.IsNullOrEmpty(item2))
             {
                 return null;
             }
+
+            if (!string.IsNullOrEmpty(item2) && item2.Contains(Separator))
+            {
+                // Replaces because '-' is decoded from the scanner as 'ß'
+                item1 = item2.Split(Separator).First().Replace('ß','-');
+                item2 = item2.Split(Separator).Last().Replace('ß', '-');
+            }
+            else if (!string.IsNullOrEmpty(item1) && item1.Contains(Separator))
+            {
+                item2 = item1.Split(Separator).Last().Replace('ß', '-');
+                item1 = item1.Split(Separator).First().Replace('ß', '-');
+            }
+
+            if (string.IsNullOrEmpty(item1))
+            {
+                return null;
+            }
+
             var newDevice = new DeviceBase
             {
                 Identification = new Identification()
                 {
-                    ModelNumber = instanceInformations.Item1,
-                    SerialNumber = instanceInformations.Item2
+                    ModelNumber = item1,
+                    SerialNumber = item2
                 }
             };
 

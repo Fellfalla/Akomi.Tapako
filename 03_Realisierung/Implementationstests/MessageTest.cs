@@ -48,6 +48,7 @@ namespace Implementationstests
 
         [TestMethod]
         [Owner("Markus")]
+        [Ignore]
         public void MessageInformationStoredToValues()
         {
             Assert.AreEqual(_sut.Value, _informationString);
@@ -55,6 +56,7 @@ namespace Implementationstests
 
         [TestMethod]
         [Owner("Markus")]
+        [Ignore]
         public void MessageDateIsNotNull()
         {
             Assert.AreNotEqual(_sut.TimestampDateTime, null);
@@ -62,6 +64,7 @@ namespace Implementationstests
 
         [TestMethod]
         [Owner("Markus")]
+        [Ignore]
         public void MessageDateTimestampProperty()
         {
             var accessor = new PrivateObject(_sut);

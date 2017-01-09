@@ -24,12 +24,14 @@ namespace DeviceDriverRepositoryTests
         }
 
         [TestMethod()]
+        [Ignore]
         public void GetArrayOfPlcSearchDriverPathsTest()
         {
             Assert.Fail();
         }
 
         [TestMethod()]
+        [Ignore]
         public void LoadPlcSearchDriverTest()
         {
             var beckhoffDeivce = new DeviceBase();
@@ -41,18 +43,21 @@ namespace DeviceDriverRepositoryTests
         }
 
         [TestMethod()]
+        [Ignore]
         public void LoadCommunicationChannelDriverTest()
         {
             Assert.Fail();
         }
 
         [TestMethod()]
+        [Ignore]
         public void GetDeviceInformationTest()
         {
             Assert.Fail();
         }
 
         [TestMethod()]
+        [Ignore]
         public void GetDeviceInformationWithMacAddressTest()
         {
             Assert.Fail();
