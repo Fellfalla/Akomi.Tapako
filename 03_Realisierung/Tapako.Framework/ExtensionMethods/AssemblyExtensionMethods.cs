@@ -34,13 +34,25 @@ namespace Tapako.Framework.ExtensionMethods
         /// <typeparam name="TTargetClass"></typeparam>
         /// <param name="assembly"></param>
         /// <returns></returns>
-        public static IEnumerable<Type> GetPotentialTargetTypes<TTargetClass>(this Assembly assembly)
+        public static IEnumerable<Type> GetChildClasses<TTargetClass>(this Assembly assembly)
         {
             Type[] types = assembly.GetLoadableTypes().ToArray();
-            return types.Where(
-                assemblyType =>
-                    typeof(TTargetClass).IsAssignableFrom(assemblyType) && !assemblyType.IsInterface &&
-                    assemblyType.GetParameterlessConstructor() != null);
+            foreach (var type in types)
+            {
+                var isDerivatedType = typeof(TTargetClass).IsAssignableFrom(type);
+                var isNotAbstract = !type.IsAbstract;
+                var isClass = type.IsClass;
+                var hasDefaultConstructor = type.HasEmptyOrDefaultConstructor();
+
+                if (isDerivatedType &&
+                    isNotAbstract &&
+                    isClass &&
+                    hasDefaultConstructor)
+                {
+                    yield return type;
+                }
+
+            }
         }
     }
 }

@@ -16,20 +16,6 @@ namespace Tapako.Framework
     public static class DllLoader
     {
         //todo: implementiere das Laden einer Klasse die zu einer übergebenen schnittstelle pass
-        //private List<object> actions;
-
-        //private string DriverName;
-        //private string Class;
-        //private string Method;
-
-        //public DllLoader()
-        //{
-        //    DriverName = "DLL1.dll";
-        //    Class = "Class1";
-        //    Method = "Method1";
-
-        //    actions = new List<object>();
-        //}
 
         /// <summary>
         /// Loads a dll assembly and returns a Class
@@ -74,11 +60,12 @@ namespace Tapako.Framework
         /// </summary>
         /// <param name="driverAssembly">Instanz der Assebmly die die gewünschte Klasse beinhaltet</param>
         /// <returns></returns>
-        private static TTargetClass LoadClass<TTargetClass>(Assembly driverAssembly)
+        public static TTargetClass LoadClass<TTargetClass>(Assembly driverAssembly)
         {
             if (driverAssembly != null)
             {
-                List<Type> types = driverAssembly.GetPotentialTargetTypes<TTargetClass>().ToList();
+                
+                List<Type> types = driverAssembly.GetChildClasses<TTargetClass>().ToList();
                 List<Type> notValidTypes = new List<Type>();
 
                 // At first try to load a marked class
@@ -116,7 +103,7 @@ namespace Tapako.Framework
         {
             try
             {
-                var obj = (TTargetClass)Activator.CreateInstance(type);
+                var obj = (TTargetClass) Activator.CreateInstance(type);
                 if (obj != null)
                     return obj;
             }
