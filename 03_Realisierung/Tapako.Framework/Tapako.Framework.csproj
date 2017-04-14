@@ -71,6 +71,7 @@
     <Compile Include="..\TapakoVersionInfo.cs">
       <Link>Properties\TapakoVersionInfo.cs</Link>
     </Compile>
+    <Compile Include="DeviceInformationManagement\InformationSources\DeviceCompletementBase.cs" />
     <Compile Include="DeviceInformationManagement\ObjectMergerLoggerAdapter.cs" />
     <Compile Include="Framework\Constants.cs" />
     <Compile Include="DeviceInformationManagement\DeviceInformationManager.cs" />
