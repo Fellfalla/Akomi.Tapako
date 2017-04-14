@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using ErrorEventArgs = Newtonsoft.Json.Serialization.ErrorEventArgs;
+using Akomi.InformationModel.Component.ComponentPort;
 
 namespace Tapako.DeviceInformationManagement.IO
 {
@@ -41,7 +42,7 @@ namespace Tapako.DeviceInformationManagement.IO
             };
             Settings.Converters.Add(new IpAddressConverter());
             Settings.Converters.Add(new ConcreteConverter<ISkillList, SkillList>());
-            Settings.Converters.Add(new ConcreteConverter<IConnectionList, ConnectionList>());
+            Settings.Converters.Add(new ConcreteConverter<IPortList, PortList>());
         }
 
         private static void JsonErrorHandler(object sender, ErrorEventArgs e)

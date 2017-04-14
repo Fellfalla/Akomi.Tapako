@@ -31,17 +31,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Akomi.InformationModel, Version=0.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.1.63\lib\net45\Akomi.InformationModel.dll</HintPath>
     </Reference>
-    <Reference Include="Akomi.Utilities, Version=1.0.6198.29879, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Akomi.MathNet.Spatial, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.MathNet.Spatial.1.0.0.5\lib\net40\Akomi.MathNet.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Akomi.Utilities, Version=1.0.6258.37687, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.27\lib\net45\Akomi.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="KellermanSoftware.Compare-NET-Objects, Version=3.6.0.0, Culture=neutral, PublicKeyToken=d970ace04cc85217, processorArchitecture=MSIL">
       <HintPath>..\packages\CompareNETObjects.3.06.0.0\lib\net45\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=3.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.3.13.1\lib\net40\MathNet.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>

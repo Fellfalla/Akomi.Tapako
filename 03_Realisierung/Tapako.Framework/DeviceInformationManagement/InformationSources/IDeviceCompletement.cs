@@ -38,7 +38,7 @@ namespace Tapako.DeviceInformationManagement.InformationSources
                 (ref IDevice device) => CompleteDescription                 (ref device),
                 (ref IDevice device) => CompleteIdentification              (ref device),
                 (ref IDevice device) => CompleteSecurity                    (ref device),
-                (ref IDevice device) => CompleteConnections                 (ref device),
+                (ref IDevice device) => CompletePorts                       (ref device),
                 (ref IDevice device) => CompletePresentationData            (ref device),
                 (ref IDevice device) => CompleteDocumentation               (ref device),
                 (ref IDevice device) => CompletePhysicalDescription         (ref device),
@@ -46,7 +46,7 @@ namespace Tapako.DeviceInformationManagement.InformationSources
                 (ref IDevice device) => CompleteState                       (ref device),
                 (ref IDevice device) => CompleteSubdevices                  (ref device),
                 (ref IDevice device) => CompleteLogic                       (ref device),
-                (ref IDevice device) => CompleteManufacturingData              (ref device),
+                (ref IDevice device) => CompleteManufacturingData           (ref device),
                 (ref IDevice device) => CompleteTradingData                 (ref device),
                 (ref IDevice device) => CompleteParametrization             (ref device)
             };
@@ -75,11 +75,11 @@ namespace Tapako.DeviceInformationManagement.InformationSources
         protected void CompleteDescription           (ref IDevice device) {CompleteDescription         (device.Description          );}
         protected void CompleteDocumentation         (ref IDevice device) {CompleteDocumentation       (device.Documentation        );}
         protected void CompleteSecurity              (ref IDevice device) {CompleteSecurity            (device.Security             );}
-        protected void CompleteConnections           (ref IDevice device) {CompleteConnections         (device.Connections          );}
+        protected void CompletePorts                 (ref IDevice device) {CompletePorts               (device.Ports          );}
         protected void CompleteSafety                (ref IDevice device) {CompleteSafety              (device.Safety               );}
         protected void CompleteState                 (ref IDevice device) {CompleteState               (device.State                );}
         protected void CompleteSubdevices            (ref IDevice device) {CompleteSubdevices          (device.SubDevices           );}
-        protected void CompleteManufacturingData        (ref IDevice device) {CompleteManufacturingData      (device.ManufacturingData       );}
+        protected void CompleteManufacturingData     (ref IDevice device) {CompleteManufacturingData      (device.ManufacturingData       );}
         protected void CompleteParametrization       (ref IDevice device) {CompleteParametrization     (device                      );}
 
 
@@ -92,7 +92,7 @@ namespace Tapako.DeviceInformationManagement.InformationSources
         protected abstract void CompleteDescription             (IDeviceDescription     deviceDescription   );
         protected abstract void CompleteDocumentation           (IDocumentation         documentation       );
         protected abstract void CompleteSecurity                (ISecurity              security            );
-        protected abstract void CompleteConnections             (IConnectionList        connectionList      );
+        protected abstract void CompletePorts                   (IPortList              portList            );
         protected abstract void CompleteSafety                  (ISafety                safety              );
         protected abstract void CompleteState                   (IState                 state               );
         protected abstract void CompleteSubdevices              (IList<IDevice>         subdevices          );

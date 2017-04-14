@@ -72,7 +72,8 @@ namespace Tapako.Framework.Tests
 
         public class DummyDeviceCompletement : DeviceCompletementBase
         {
-            protected override void CompleteConnections(IPortList connectionList)
+            
+            protected override void CompletePorts(IPortList portList)
             {
                 throw new NotImplementedException();
             }
@@ -146,6 +147,8 @@ namespace Tapako.Framework.Tests
             {
                 throw new NotImplementedException();
             }
+
+           
         }
     }
 }
