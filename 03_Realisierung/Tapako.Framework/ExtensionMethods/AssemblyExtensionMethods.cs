@@ -36,9 +36,12 @@ namespace Tapako.Framework.ExtensionMethods
         /// <returns></returns>
         public static IEnumerable<Type> GetChildClasses<TTargetClass>(this Assembly assembly)
         {
-            Type[] types = assembly.GetLoadableTypes().ToArray();
-            foreach (var type in types)
+            Type[] loadableTypes = assembly.GetLoadableTypes().ToArray();
+            foreach (var type in loadableTypes)
             {
+
+                // searches for desired child classes in given assembly
+                // --> A different Assembly version will break this "IsAssignableFrom"-Correlation
                 var isDerivatedType = typeof(TTargetClass).IsAssignableFrom(type);
                 var isNotAbstract = !type.IsAbstract;
                 var isClass = type.IsClass;

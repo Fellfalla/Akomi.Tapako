@@ -66,7 +66,7 @@ namespace Tapako.Framework
             {
                 
                 List<Type> types = driverAssembly.GetChildClasses<TTargetClass>().ToList();
-                List<Type> notValidTypes = new List<Type>();
+                List<Type> invalidTypes = new List<Type>();
 
                 // At first try to load a marked class
                 foreach (Type assemblyType in types.Where(type => type.HasCustomAttributes(new[] { typeof(PreferredPublicClass) })))
@@ -76,11 +76,11 @@ namespace Tapako.Framework
                     {
                         return result;
                     }
-                    notValidTypes.Add(assemblyType);
+                    invalidTypes.Add(assemblyType);
                 }
 
                 // Try to instanziate not preferred classes
-                foreach (Type assemblyType in types.Except(notValidTypes))
+                foreach (Type assemblyType in types.Except(invalidTypes))
                 {
                     var result = TryCreateInstance<TTargetClass>(assemblyType, sourceAssembly: driverAssembly);
                     if (result != null)
