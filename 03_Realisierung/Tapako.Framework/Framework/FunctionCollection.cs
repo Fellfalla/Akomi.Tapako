@@ -80,6 +80,17 @@ namespace Tapako.Framework
             return string.Empty;
         }
 
+
+        /// <summary>
+        /// </summary>
+        /// <param name="path">The input path</param>
+        /// <param name="replaceWith">illegal characters will be replaced with this string</param>
+        /// <returns></returns>
+        public static string ReplaceIllegalPathCharacters(string path, char replaceWith)
+        {
+            return ReplaceIllegalPathCharacters(path, replaceWith.ToString());
+        }
+
         [MethodImpl(MethodImplOptions.NoInlining)]
         public static string GetCurrentMethod()
         {
