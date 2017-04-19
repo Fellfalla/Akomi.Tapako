@@ -36,6 +36,12 @@ namespace Tapako.DeviceInformationManagement.InformationSources
         void RestoreInformationSource();
 
         /// <summary>
+        /// Removes all informations the Repository has about <paramref name="iDevice"/>
+        /// </summary>
+        /// <param name="iDevice"></param>
+        void RemoveDeviceInformations(IDevice iDevice);
+
+        /// <summary>
         /// Name of the Repository
         /// </summary>
         string Name { get; }

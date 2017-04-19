@@ -272,5 +272,10 @@ namespace Tapako.DeviceInformationManagement.InformationSources
         {
             return !string.IsNullOrEmpty(Name) ? Name : base.ToString();
         }
+
+        public virtual void RemoveDeviceInformations(IDevice iDevice)
+        {
+            throw new NotSupportedException();
+        }
     }
 }
