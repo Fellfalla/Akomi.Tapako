@@ -18,7 +18,7 @@ namespace Tapako.DeviceInformationManagement.InformationSources
         /// </returns>
         public int Compare(IInformationSource x, IInformationSource y)
         {
-            return x.SourcePriority - y.SourcePriority;
+            return y.SourcePriority - x.SourcePriority;
         }
     }
 }
