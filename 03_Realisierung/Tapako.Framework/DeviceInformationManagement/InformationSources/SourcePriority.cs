@@ -9,7 +9,7 @@
         /// <summary>
         /// High SourcePriority is for elements with lots of Logic
         /// </summary>
-        High = 1,
+        High = 3,
 
         /// <summary>
         /// Medium SourcePriority is for Information Source without any Logic
@@ -19,7 +19,7 @@
         /// <summary>
         /// Low SourcePriority is for information sources which need other information sources to be loaded earlier
         /// </summary>
-        Low = 3
+        Low = 1
     }
 
 }

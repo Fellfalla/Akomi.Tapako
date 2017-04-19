@@ -18,19 +18,7 @@ namespace Tapako.DeviceInformationManagement.InformationSources
         /// </returns>
         public int Compare(IInformationSource x, IInformationSource y)
         {
-            if (x.SourcePriority < y.SourcePriority)
-            {
-                return -1; // kleiner als 0 rückt das Element weiter nach vorne
-            }
-            else if (x.SourcePriority == y.SourcePriority)
-            {
-                return 0; // position bleibt gleich
-            }
-            else
-            {
-                return 1;  // größer als 0 rückt das Element weiter nach hinten
-            }
-
+            return x.SourcePriority - y.SourcePriority;
         }
     }
 }
