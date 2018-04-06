@@ -2,7 +2,7 @@
 
 namespace Tapako.Services
 {
-    public class ReferenceToHostOutputParam : OutputParamBase
+    public class ReferenceToHostOutputParam : SkillParameter
     {
     }
 }

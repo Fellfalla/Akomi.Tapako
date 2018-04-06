@@ -3,7 +3,7 @@ using Akomi.InformationModel.Skills;
 
 namespace Tapako.Services
 {
-    public class ReferenceToHostInputParam : InputParamBase
+    public class ReferenceToHostInputParam : SkillParameter
     {
         public IDevice Device { get; set; }
     }
