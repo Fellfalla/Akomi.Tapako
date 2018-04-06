@@ -175,7 +175,7 @@
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
-                    <DataTemplate DataType="{x:Type connection:Connection}">
+                    <DataTemplate DataType="{x:Type connection:ComponentPort}">
    
                             <StackPanel Orientation="Horizontal" Style="{StaticResource {x:Type StackPanel}}">
                                 <Label Content="{Binding .}" Style="{StaticResource InteractiveLabel}"/>
@@ -214,7 +214,7 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
              
-                <DataTemplate DataType="{x:Type connection:Connection}" >
+                <DataTemplate DataType="{x:Type connection:ComponentPort}" >
                     <StackPanel Orientation="Horizontal" Style="{StaticResource {x:Type StackPanel}}">
                         <Rectangle Style="{StaticResource Wirable}" x:Name="Node"/>
                         <Label Content="{Binding .}" Style="{StaticResource InteractiveLabel}"/>
