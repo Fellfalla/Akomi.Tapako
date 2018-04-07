@@ -120,7 +120,7 @@ namespace Tapako.DeviceInformationManagement.InformationSources
         }
         protected void CompletePorts                 (ref IDevice device)
         {
-            //device.Ports= InstaciateIfNull<IPortList, PortList>(device.Security);
+            //device.Ports = InstaciateIfNull<IPortList, PortList>(device.Ports);
             CompletePorts(device.Ports          );
         }
         protected void CompleteSafety                (ref IDevice device)

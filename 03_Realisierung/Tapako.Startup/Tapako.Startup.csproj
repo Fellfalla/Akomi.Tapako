@@ -72,27 +72,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Akomi.DynamicOpcUa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\Akomi.DynamicOpcUa.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.56\lib\net45\Akomi.DynamicOpcUa.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.1.0.0.172\lib\net45\Akomi.InformationModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.Utilities, Version=1.0.6198.29879, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
+    <Reference Include="Akomi.MathNet.Spatial, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.MathNet.Spatial.1.0.0.5\lib\net40\Akomi.MathNet.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akomi.Utilities, Version=1.0.6620.33885, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.33\lib\net45\Akomi.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akomi.Utilities.Extended, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.Extended.0.2.0.33\lib\net45\Akomi.Utilities.Extended.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Akomi.Visuals, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Visuals.0.2.0.9\lib\net45\Akomi.Visuals.dll</HintPath>
+      <HintPath>..\packages\Akomi.Visuals.0.2.0.33\lib\net45\Akomi.Visuals.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AutoItX3.Assembly, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a646454c8d475470, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\AutoItX3.Assembly.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.56\lib\net45\AutoItX3.Assembly.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Fasterflect, Version=2.1.3.0, Culture=neutral, PublicKeyToken=38d18473284c1ca7, processorArchitecture=MSIL">
       <HintPath>..\packages\fasterflect.2.1.3\lib\net40\Fasterflect.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=3.20.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.3.20.2\lib\net40\MathNet.Numerics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MathNet.Spatial, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Spatial.0.4.0\lib\net40\MathNet.Spatial.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -111,8 +127,8 @@
       <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prism.Core.6.2.0\lib\net45\Prism.dll</HintPath>
+    <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.6.3.0\lib\net45\Prism.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Prism.Unity.Wpf, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
@@ -137,16 +153,20 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="Tapako.ObjectMerger.Attributes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tapako.ObjectMerger.Attributes.0.5.0.15\lib\net45\Tapako.ObjectMerger.Attributes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="UnifiedAutomation.UaBase, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaBase.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.56\lib\net45\UnifiedAutomation.UaBase.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="UnifiedAutomation.UaClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaClient.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.56\lib\net45\UnifiedAutomation.UaClient.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="UnifiedAutomation.UaServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.41\lib\net45\UnifiedAutomation.UaServer.dll</HintPath>
+      <HintPath>..\packages\Akomi.DynamicOpcUa.1.0.0.56\lib\net45\UnifiedAutomation.UaServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
