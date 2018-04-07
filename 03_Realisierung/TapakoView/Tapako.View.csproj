@@ -66,39 +66,27 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Akomi.InformationModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.InformationModel.1.0.0.172\lib\net45\Akomi.InformationModel.dll</HintPath>
+    <Reference Include="Akomi.InformationModel, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.InformationModel.0.2.0.11\lib\net45\Akomi.InformationModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Akomi.MathNet.Spatial, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.MathNet.Spatial.1.0.0.5\lib\net40\Akomi.MathNet.Spatial.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Akomi.Utilities, Version=1.0.6620.33885, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Utilities.0.2.0.33\lib\net45\Akomi.Utilities.dll</HintPath>
+    <Reference Include="Akomi.Utilities, Version=1.0.6198.29879, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akomi.Utilities.0.2.0.13\lib\net45\Akomi.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Akomi.Utilities.Extended, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Utilities.Extended.0.2.0.33\lib\net45\Akomi.Utilities.Extended.dll</HintPath>
+      <HintPath>..\packages\Akomi.Utilities.Extended.0.2.0.9\lib\net45\Akomi.Utilities.Extended.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Akomi.Visuals, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Akomi.Visuals.0.2.0.33\lib\net45\Akomi.Visuals.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MathNet.Numerics, Version=3.20.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MathNet.Numerics.3.20.2\lib\net40\MathNet.Numerics.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MathNet.Spatial, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MathNet.Spatial.0.4.0\lib\net40\MathNet.Spatial.dll</HintPath>
+      <HintPath>..\packages\Akomi.Visuals.0.2.0.9\lib\net45\Akomi.Visuals.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
       <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
-    <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prism.Core.6.3.0\lib\net45\Prism.dll</HintPath>
+    <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.6.2.0\lib\net45\Prism.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Prism.Wpf, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
@@ -116,10 +104,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="Tapako.ObjectMerger.Attributes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Tapako.ObjectMerger.Attributes.0.5.0.15\lib\net45\Tapako.ObjectMerger.Attributes.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />

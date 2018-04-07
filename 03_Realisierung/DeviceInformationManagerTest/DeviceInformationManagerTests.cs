@@ -268,6 +268,25 @@ namespace DeviceInformationManagerTests
             throw new NotImplementedException();
         }
 
+        public override void SetupNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetupBack()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetupCancel()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetupCreateInstance()
+        {
+            throw new NotImplementedException();
+        }
 
         public override void Reset()
         {

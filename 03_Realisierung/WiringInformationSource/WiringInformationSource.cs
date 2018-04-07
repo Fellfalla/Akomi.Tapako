@@ -59,8 +59,7 @@ namespace Tapako.Repositories.WiringInformationSource
                 Logger.Info("IDevice is null. No connections will be saved");
                 return;
             }
-            
-            if (device.Ports == null || !device.Ports.Any())
+            if (device.Connections == null || !device.Connections.Any())
             {
                 Logger.Info("No connections to save for {0}", device);
                 return;

@@ -191,9 +191,9 @@ namespace Tapako.Repositories.SubdeviceStorage
             }
 
             // add information from connection
-            if (device.Ports != null && device.Ports.Any())
+            if (device.Connections != null && device.Connections.Any())
             {
-                foreach (var connection in device.Ports)
+                foreach (var connection in device.Connections)
                 {
                     string connectionMessage = ConnectionToString(connection);
                     if (string.IsNullOrWhiteSpace(connectionMessage))
@@ -206,7 +206,7 @@ namespace Tapako.Repositories.SubdeviceStorage
             return identifier;
         }
 
-        private string ConnectionToString(ComponentPort connection)
+        private string ConnectionToString(Connection connection)
         {
             if (connection == null || 
                 connection.Communication == null || 
